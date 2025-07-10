@@ -624,6 +624,34 @@
       box-sizing: border-box;
     }
 
+    /* 抽卡動畫中的影片樣式 */
+    .card-front-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      filter: drop-shadow(0 0 12px #00ffffcc);
+    }
+
+    .card-front-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+      z-index: 3;
+      position: relative;
+    }
+
+    .card-front-info {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      z-index: 3;
+      position: relative;
+    }
+
     @keyframes cardAppear {
       0% { transform: translate(-50%, -50%) scale(0); }
       50% { transform: translate(-50%, -50%) scale(1.3); }
@@ -1360,6 +1388,15 @@
           flex-direction: column;
           justify-content: flex-start;
         }
+        .wish-card-style video.card-media {
+          width: 100%;
+          height: 50%;
+          object-fit: cover;
+          border-radius: 10px;
+          filter: drop-shadow(0 0 12px #00ffffcc);
+          background: #000;
+          margin-bottom: 8px;
+        }
         .wish-card-style .label {
           font-size: 0.92rem;
           min-height: 2.1em;
@@ -1579,9 +1616,45 @@
 
     const rankMap = { '普通': 'A', '稀有': 'R', '超稀有': 'SSR' };
 
-    // 移除保底計數器和設定
-    let pityCounter = {};
-    const pitySettings = {};
+    // 保底計數器和設定
+    let pityCounter = 0; // 一般保底計數器（50抽必得SSR）
+    let wishPityCounter = 0; // 許願保底計數器（70抽必得許願SSR）
+    const PITY_THRESHOLD = 50; // 一般保底閾值
+    const WISH_PITY_THRESHOLD = 70; // 許願保底閾值
+    
+    // 載入保底計數器
+    function loadPityCounters() {
+      const savedPity = localStorage.getItem('pityCounter');
+      const savedWishPity = localStorage.getItem('wishPityCounter');
+      if (savedPity) pityCounter = parseInt(savedPity);
+      if (savedWishPity) wishPityCounter = parseInt(savedWishPity);
+    }
+    
+    // 儲存保底計數器
+    function savePityCounters() {
+      localStorage.setItem('pityCounter', pityCounter.toString());
+      localStorage.setItem('wishPityCounter', wishPityCounter.toString());
+    }
+    
+    // 增加保底計數器
+    function incrementPityCounters() {
+      pityCounter++;
+      wishPityCounter++;
+      savePityCounters();
+    }
+    
+    // 重置保底計數器
+    function resetPityCounters() {
+      pityCounter = 0;
+      wishPityCounter = 0;
+      savePityCounters();
+    }
+    
+    // 重置許願保底計數器
+    function resetWishPityCounter() {
+      wishPityCounter = 0;
+      savePityCounters();
+    }
 
     // 新增：初始化許願池選項
     function initializeWishPool() {
@@ -1664,26 +1737,35 @@
       // 已擁有標記
       const isUnlocked = LinkageSystem.cards.isCardOwned(card.word);
       let ownedStampHtml = isUnlocked ? '<div class="owned-stamp">✔ 已擁有</div>' : '';
-      // 卡片內容
-      let cardContent = `
-        <div class="wish-card-outer">
-          <div class="wish-card-inner">
-            <div class="card ${rarityClass}${isUnlocked ? ' unlocked' : ' locked'} wish-card-style">
-              <img class="card-media" src="${card.image}" alt="${card.word}">
-              <div class="stars">${starIcons}</div>
-              <div class="label">
-                <div class="chinese-text">${card.zh}</div>
-                <div class="english-text">${card.word}</div>
+              // 檢查是否為 MP4 影片
+        const isImageMP4 = card.image && card.image.endsWith('.mp4');
+        
+        // 卡片內容
+        let cardContent = `
+          <div class="wish-card-outer">
+            <div class="wish-card-inner">
+              <div class="card ${rarityClass}${isUnlocked ? ' unlocked' : ' locked'} wish-card-style">
+                ${isImageMP4 ? 
+                  `<video class="card-media" autoplay loop muted playsinline style="width: 100%; height: 50%; object-fit: cover; border-radius: 10px;">
+                    <source src="${card.image}" type="video/mp4">
+                    您的瀏覽器不支援影片播放
+                  </video>` : 
+                  `<img class="card-media" src="${card.image}" alt="${card.word}">`
+                }
+                <div class="stars">${starIcons}</div>
+                <div class="label">
+                  <div class="chinese-text">${card.zh}</div>
+                  <div class="english-text">${card.word}</div>
+                </div>
+                <div class="category-tag">類別：${card.category}</div>
               </div>
-              <div class="category-tag">類別：${card.category}</div>
-            </div>
-            <div class="wish-bonus-block">
-              <span class="wish-bonus-icon">🎯</span>
-              <span class="wish-bonus-text">SSR 抽中機率提升 <b>2%</b></span>
+              <div class="wish-bonus-block">
+                <span class="wish-bonus-icon">🎯</span>
+                <span class="wish-bonus-text">SSR 抽中機率提升 <b>2%</b></span>
+              </div>
             </div>
           </div>
-        </div>
-      `;
+        `;
       currentWishDiv.innerHTML = cardContent;
     }
 
@@ -1714,6 +1796,9 @@
       stars = LinkageSystem.stars.get();
       updateStars();
 
+      // 載入保底計數器
+      loadPityCounters();
+
       // 載入許願卡片設定
       const savedWishCard = localStorage.getItem('currentWishCard');
       if (savedWishCard) {
@@ -1735,7 +1820,30 @@
         localStorage.setItem("firstGachaGifted", "true");
         LinkageSystem.notifications.show('🎁 首次見面禮！獲得 150 顆星星！', 'success');
       }
+      
+      // 顯示保底機制公告
+      showPityAnnouncement();
     });
+    
+    // 保底機制公告
+    function showPityAnnouncement() {
+      if (!localStorage.getItem('pityAnnouncementShown')) {
+        const announcement = `
+          <div style="text-align: center; padding: 20px;">
+            <h3 style="color: #ffd700; margin-bottom: 15px;">🎯 保底機制說明</h3>
+            <div style="color: #fff; line-height: 1.6;">
+              <p><strong>⭐ 一般保底：</strong>50抽內必得SSR卡片</p>
+              <p><strong>🎯 許願保底：</strong>70抽內必得許願SSR卡片</p>
+              <p><strong>✨ 許願加成：</strong>設定許願SSR後，抽中機率提升2%</p>
+              <p style="color: #ffaa00; margin-top: 15px;">💡 設定許願SSR可大幅提升抽中機率！</p>
+            </div>
+          </div>
+        `;
+        
+        LinkageSystem.notifications.show(announcement, 'info');
+        localStorage.setItem('pityAnnouncementShown', 'true');
+      }
+    }
 
     // [FINAL VERSION] 統一處理抽卡結果的核心邏輯
     function processDraw(card) {
@@ -1802,13 +1910,29 @@
       let selectedCard; // 將變數宣告移到函數開頭
       let isWishSuccess = false; // 新增：記錄是否許願成功
 
-      // 檢查是否抽中許願卡片
-      if (checkWishCard() && currentWishCard) {
+      // 保底檢查：優先檢查許願保底（70抽必得許願SSR）
+      if (wishPityCounter >= WISH_PITY_THRESHOLD && currentWishCard) {
         selectedCard = currentWishCard;
-        isWishSuccess = true; // 標記許願成功
-        console.log('許願成功，抽中:', selectedCard.zh);
-      } else {
-        // 機率控制系統
+        isWishSuccess = true;
+        resetWishPityCounter(); // 重置許願保底計數器
+        console.log('🎯 許願保底觸發！70抽必得許願SSR:', selectedCard.zh);
+      }
+      // 一般保底檢查（50抽必得SSR）
+      else if (pityCounter >= PITY_THRESHOLD) {
+        const ssrCards = allCards.filter(card => card.rarity === '超稀有');
+        selectedCard = ssrCards.length ? ssrCards[Math.floor(Math.random() * ssrCards.length)] : allCards[Math.floor(Math.random() * allCards.length)];
+        resetPityCounters(); // 重置所有保底計數器
+        console.log('⭐ 一般保底觸發！50抽必得SSR:', selectedCard.zh);
+      }
+      // 檢查是否抽中許願卡片（2%機率）
+      else if (checkWishCard() && currentWishCard) {
+        selectedCard = currentWishCard;
+        isWishSuccess = true;
+        resetWishPityCounter(); // 重置許願保底計數器
+        console.log('✨ 許願成功，抽中:', selectedCard.zh);
+      }
+      // 正常抽卡邏輯
+      else {
         const random = Math.random() * 100;
         console.log('隨機數:', random);
         
@@ -1822,6 +1946,11 @@
           selectedCard = nonSsrCards.length ? nonSsrCards[Math.floor(Math.random() * nonSsrCards.length)] : allCards[Math.floor(Math.random() * allCards.length)];
           console.log('抽中普通/稀有卡:', selectedCard.zh);
         }
+      }
+      
+      // 增加保底計數器（除了保底觸發的情況）
+      if (!isWishSuccess && selectedCard.rarity !== '超稀有') {
+        incrementPityCounters();
       }
 
       console.log('最終選中的卡片:', selectedCard);
@@ -1869,21 +1998,54 @@
       stars = LinkageSystem.stars.get();
       
       const drawnCards = [];
-      // 十連抽：所有卡片都使用相同的抽卡邏輯，取消保底機制
+      let hasWishCard = false; // 記錄十連抽中是否有許願卡
+      
+      // 十連抽：使用保底邏輯
       for (let i = 0; i < 10; i++) {
-        const random = Math.random() * 100;
         let selectedCard;
-        // 檢查是否抽中許願卡片
-        if (checkWishCard() && currentWishCard) {
+        let isWishSuccess = false;
+        
+        // 保底檢查：優先檢查許願保底（70抽必得許願SSR）
+        if (wishPityCounter >= WISH_PITY_THRESHOLD && currentWishCard && !hasWishCard) {
           selectedCard = currentWishCard;
-        } else if (random < 3) { // 3% 機率抽到 SSR
+          isWishSuccess = true;
+          hasWishCard = true;
+          resetWishPityCounter();
+          console.log('🎯 十連抽許願保底觸發！70抽必得許願SSR:', selectedCard.zh);
+        }
+        // 一般保底檢查（50抽必得SSR）
+        else if (pityCounter >= PITY_THRESHOLD) {
           const ssrCards = allCards.filter(card => card.rarity === '超稀有');
           selectedCard = ssrCards.length ? ssrCards[Math.floor(Math.random() * ssrCards.length)] : allCards[Math.floor(Math.random() * allCards.length)];
-        } else {
-          const nonSsrCards = allCards.filter(card => card.rarity !== '超稀有');
-          selectedCard = nonSsrCards.length ? nonSsrCards[Math.floor(Math.random() * nonSsrCards.length)] : allCards[Math.floor(Math.random() * allCards.length)];
+          resetPityCounters();
+          console.log('⭐ 十連抽一般保底觸發！50抽必得SSR:', selectedCard.zh);
         }
-        drawnCards.push(selectedCard);
+        // 檢查是否抽中許願卡片（2%機率）
+        else if (checkWishCard() && currentWishCard && !hasWishCard) {
+          selectedCard = currentWishCard;
+          isWishSuccess = true;
+          hasWishCard = true;
+          resetWishPityCounter();
+          console.log('✨ 十連抽許願成功，抽中:', selectedCard.zh);
+        }
+        // 正常抽卡邏輯
+        else {
+          const random = Math.random() * 100;
+          if (random < 3) { // 3% 機率抽到 SSR
+            const ssrCards = allCards.filter(card => card.rarity === '超稀有');
+            selectedCard = ssrCards.length ? ssrCards[Math.floor(Math.random() * ssrCards.length)] : allCards[Math.floor(Math.random() * allCards.length)];
+          } else {
+            const nonSsrCards = allCards.filter(card => card.rarity !== '超稀有');
+            selectedCard = nonSsrCards.length ? nonSsrCards[Math.floor(Math.random() * nonSsrCards.length)] : allCards[Math.floor(Math.random() * allCards.length)];
+          }
+        }
+        
+        // 增加保底計數器（除了保底觸發和SSR的情況）
+        if (!isWishSuccess && selectedCard.rarity !== '超稀有') {
+          incrementPityCounters();
+        }
+        
+        drawnCards.push({ card: selectedCard, isWishSuccess });
       }
 
       const drawSequence = async () => {
@@ -1892,9 +2054,7 @@
         let duplicateCardsLog = {};
         
         for (let i = 0; i < drawnCards.length; i++) {
-          const card = drawnCards[i];
-          // 檢查這張卡片是否是許願成功的
-          const isWishSuccess = currentWishCard && card.word === currentWishCard.word;
+          const { card, isWishSuccess } = drawnCards[i];
           
           // 使用可等待的動畫函數，傳遞許願成功狀態
           await showCardAsync(card, isWishSuccess);
@@ -1982,17 +2142,34 @@
         }
         
         // 4. 設定卡面內容與稀有度樣式
-        // 設置背景圖片到卡片正面
-        cardFront.style.backgroundImage = `url('${card.image}')`;
-        cardFront.style.setProperty('--card-image', `url('${card.image}')`);
+        // 檢查是否為 MP4 影片
+        const isImageMP4 = card.image && card.image.endsWith('.mp4');
         
-        // 清空並重新創建卡片內容
-        cardFront.innerHTML = `
-          <div class="card-front-content">
-            <div class="card-front-title">${card.zh} (${card.word})</div>
-            <div class="card-front-info">${card.category} | ${card.rarity}</div>
-          </div>
-        `;
+        if (isImageMP4) {
+          // 如果是 MP4 影片，創建 video 元素
+          cardFront.innerHTML = `
+            <div class="card-front-content">
+              <div class="card-front-title">${card.zh} (${card.word})</div>
+              <div class="card-front-info">${card.category} | ${card.rarity}</div>
+              <video class="card-front-video" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                <source src="${card.image}" type="video/mp4">
+                您的瀏覽器不支援影片播放
+              </video>
+            </div>
+          `;
+        } else {
+          // 如果是圖片，使用背景圖片
+          cardFront.style.backgroundImage = `url('${card.image}')`;
+          cardFront.style.setProperty('--card-image', `url('${card.image}')`);
+          
+          // 清空並重新創建卡片內容
+          cardFront.innerHTML = `
+            <div class="card-front-content">
+              <div class="card-front-title">${card.zh} (${card.word})</div>
+              <div class="card-front-info">${card.category} | ${card.rarity}</div>
+            </div>
+          `;
+        }
         
         const rarityClass = getRarityClass(card.rarity);
         if (rarityClass) {
@@ -2231,8 +2408,16 @@
           else if (card.rarity === "稀有") starIcons = "★★";
           else if (card.rarity === "超稀有") starIcons = "★★★";
 
+          // 支援MP4顯示
+          let cardMedia = '';
+          if (card.image && card.image.endsWith('.mp4')) {
+            cardMedia = `<video src="${card.image}" autoplay loop muted playsinline style="width:100%;height:120px;object-fit:cover;border-radius:10px;"></video>`;
+          } else {
+            cardMedia = `<img src="${card.image}" alt="${card.word}">`;
+          }
+
           div.innerHTML = `
-            <img src="${card.image}" alt="${card.word}">
+            ${cardMedia}
             <div class="stars">${starIcons}</div>
             <div class="label">${card.zh} (${card.word})</div>
             <div class="category-tag">類別：${card.category}</div>
@@ -2291,17 +2476,34 @@
       }
       
       // 4. 設定卡面內容與稀有度樣式
-      // 設置背景圖片到卡片正面
-      cardFront.style.backgroundImage = `url('${card.image}')`;
-      cardFront.style.setProperty('--card-image', `url('${card.image}')`);
+      // 檢查是否為 MP4 影片
+      const isImageMP4 = card.image && card.image.endsWith('.mp4');
       
-      // 清空並重新創建卡片內容
-      cardFront.innerHTML = `
-        <div class="card-front-content">
-          <div class="card-front-title">${card.zh} (${card.word})</div>
-          <div class="card-front-info">${card.category} | ${card.rarity}</div>
-        </div>
-      `;
+      if (isImageMP4) {
+        // 如果是 MP4 影片，創建 video 元素
+        cardFront.innerHTML = `
+          <div class="card-front-content">
+            <div class="card-front-title">${card.zh} (${card.word})</div>
+            <div class="card-front-info">${card.category} | ${card.rarity}</div>
+            <video class="card-front-video" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+              <source src="${card.image}" type="video/mp4">
+              您的瀏覽器不支援影片播放
+            </video>
+          </div>
+        `;
+      } else {
+        // 如果是圖片，使用背景圖片
+        cardFront.style.backgroundImage = `url('${card.image}')`;
+        cardFront.style.setProperty('--card-image', `url('${card.image}')`);
+        
+        // 清空並重新創建卡片內容
+        cardFront.innerHTML = `
+          <div class="card-front-content">
+            <div class="card-front-title">${card.zh} (${card.word})</div>
+            <div class="card-front-info">${card.category} | ${card.rarity}</div>
+          </div>
+        `;
+      }
       
       const rarityClass = getRarityClass(card.rarity);
       if (rarityClass) {
@@ -2541,14 +2743,22 @@
         else if (card.rarity === "稀有") starIcons = "★★";
         else if (card.rarity === "超稀有") starIcons = "★★★";
 
-        div.innerHTML = `
-          <img src="${card.image}" alt="${card.word}">
-          <div class="stars">${starIcons}</div>
-          <div class="label">${card.zh} (${card.word})</div>
-          <div class="category-tag">類別：${card.category}</div>
-          <div class="rank-badge">${rankMap[card.rarity] || ""}</div>
-          <div class="shard-count">${displayShardCount}</div>
-        `;
+                  // 支援MP4顯示
+          let cardMedia = '';
+          if (card.image && card.image.endsWith('.mp4')) {
+            cardMedia = `<video src="${card.image}" autoplay loop muted playsinline style="width:100%;height:120px;object-fit:cover;border-radius:10px;"></video>`;
+          } else {
+            cardMedia = `<img src="${card.image}" alt="${card.word}">`;
+          }
+
+          div.innerHTML = `
+            ${cardMedia}
+            <div class="stars">${starIcons}</div>
+            <div class="label">${card.zh} (${card.word})</div>
+            <div class="category-tag">類別：${card.category}</div>
+            <div class="rank-badge">${rankMap[card.rarity] || ""}</div>
+            <div class="shard-count">${displayShardCount}</div>
+          `;
         if (isUnlocked) {
           // 新增：如果是新卡片，給予亮光動畫
           let recentCards = [];
