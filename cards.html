@@ -275,8 +275,9 @@
       box-shadow: 0 15px 32px rgba(0,0,0,0.3), 0 0 32px #00ffff, 0 0 48px #a259ffcc;
     }
     .card.locked {
-      cursor: default;
+      cursor: not-allowed;
       opacity: 0.5;
+      pointer-events: none;
     }
     @keyframes float {
       0%, 100% { transform: translateY(0); }
@@ -307,12 +308,84 @@
     .card video.card-media {
       border: 2px solid rgba(0, 255, 255, 0.3);
       transition: border-color 0.3s ease;
+      /* 新增：影片自動播放和循環設定 */
+      autoplay: true;
+      loop: true;
+      muted: true;
+      playsinline: true;
+      /* 隱藏影片控制條 */
+      -webkit-media-controls: none;
+      -webkit-media-controls-panel: none;
+      -webkit-media-controls-play-button: none;
+      -webkit-media-controls-start-playback-button: none;
+    }
+    .card video.card-media::-webkit-media-controls {
+      display: none !important;
+    }
+    .card video.card-media::-webkit-media-controls-panel {
+      display: none !important;
+    }
+    .card video.card-media::-webkit-media-controls-play-button {
+      display: none !important;
+    }
+    .card video.card-media::-webkit-media-controls-start-playback-button {
+      display: none !important;
     }
     .card:hover video.card-media {
       border-color: rgba(0, 255, 255, 0.8);
     }
     .card.locked img {
       filter: grayscale(1) brightness(0.3);
+    }
+    .card.locked video {
+      filter: grayscale(1) brightness(0.3);
+    }
+    
+    /* 未解鎖卡片鎖定遮罩樣式 */
+    .lock-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+      backdrop-filter: blur(2px);
+    }
+    
+    .lock-overlay .lock-icon {
+      font-size: 2rem;
+      color: #ffd700;
+      text-shadow: 0 0 8px #ffd700;
+      margin-bottom: 8px;
+      animation: lockPulse 2s ease-in-out infinite;
+    }
+    
+    .lock-overlay .lock-text {
+      font-size: 0.9rem;
+      color: #fff;
+      text-shadow: 0 0 4px #000;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    @keyframes lockPulse {
+      0%, 100% { 
+        transform: scale(1);
+        opacity: 0.8;
+      }
+      50% { 
+        transform: scale(1.1);
+        opacity: 1;
+      }
     }
     .stars {
       margin-top: 4px;
@@ -474,10 +547,28 @@
     #modal .card video.card-media {
       border: 2px solid rgba(0, 255, 255, 0.5);
       box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+      /* Modal 中的影片設定 */
+      autoplay: true;
+      loop: true;
+      muted: true;
+      playsinline: true;
+      /* 隱藏影片控制條 */
+      -webkit-media-controls: none;
+      -webkit-media-controls-panel: none;
+      -webkit-media-controls-play-button: none;
+      -webkit-media-controls-start-playback-button: none;
     }
     #modal .card video.card-media::-webkit-media-controls {
-      background: rgba(0, 0, 0, 0.7);
-      border-radius: 8px;
+      display: none !important;
+    }
+    #modal .card video.card-media::-webkit-media-controls-panel {
+      display: none !important;
+    }
+    #modal .card video.card-media::-webkit-media-controls-play-button {
+      display: none !important;
+    }
+    #modal .card video.card-media::-webkit-media-controls-start-playback-button {
+      display: none !important;
     }
     #modal .card .stars {
       margin-top: 6px;
@@ -972,6 +1063,30 @@
       filter: drop-shadow(0 0 12px #00ffffcc);
       object-fit: cover;
       background: #000;
+    }
+
+    /* 新增：影片播放控制樣式 */
+    .video-controls {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 6px;
+      padding: 4px 8px;
+      font-size: 0.8rem;
+      color: #00ffff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 10;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(0, 255, 255, 0.3);
+    }
+    
+    .video-controls:hover {
+      background: rgba(0, 0, 0, 0.9);
+      border-color: rgba(0, 255, 255, 0.8);
+      box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
     }
 
     /* ====== 影片 Modal 樣式 ====== */
@@ -1621,11 +1736,41 @@
         // 準備卡片內容
         let mediaContent = '';
         
+        // 檢查 image 屬性是否為 MP4 檔案
+        const isImageMP4 = card.image && card.image.endsWith('.mp4');
+        
         // 檢查是否有影片（包括 video 和 video_url 屬性）
         const hasVideo = card.video || card.video_url;
         
-        if (hasVideo) {
-          // 有影片的卡片：只有已解鎖的卡片才顯示影片按鈕
+        // 檢查是否為 YouTube 影片
+        const isYouTubeVideo = hasVideo && (card.video.includes('youtube.com') || card.video.includes('youtu.be') || card.video_url?.includes('youtube.com') || card.video_url?.includes('youtu.be'));
+        
+        // 檢查是否為本地 MP4 影片（video 屬性）
+        const isLocalMP4Video = hasVideo && (card.video.endsWith('.mp4') || card.video_url?.endsWith('.mp4'));
+        
+        if (isImageMP4 && isUnlocked) {
+          // image 屬性為 MP4 檔案且已解鎖：直接顯示影片，自動播放，無播放按鈕
+          mediaContent = `
+            <div class="media-container" style="position: relative; width: 100%; height: 50%;">
+              <video class="card-media" autoplay loop muted playsinline>
+                <source src="${card.image}" type="video/mp4">
+                您的瀏覽器不支援影片播放
+              </video>
+            </div>
+          `;
+        } else if (isLocalMP4Video && isUnlocked) {
+          // 已解鎖的本地 MP4 影片（video 屬性）：直接顯示影片，自動播放，無播放按鈕
+          const videoUrl = card.video || card.video_url;
+          mediaContent = `
+            <div class="media-container" style="position: relative; width: 100%; height: 50%;">
+              <video class="card-media" autoplay loop muted playsinline>
+                <source src="${videoUrl}" type="video/mp4">
+                您的瀏覽器不支援影片播放
+              </video>
+            </div>
+          `;
+        } else if (isYouTubeVideo) {
+          // YouTube 影片：根據解鎖狀態決定是否顯示播放按鈕
           const videoUrl = card.video || card.video_url;
           if (isUnlocked) {
             // 已解鎖：顯示圖片 + 影片按鈕
@@ -1638,12 +1783,38 @@
               </div>
             `;
           } else {
-            // 未解鎖：只顯示圖片，不顯示影片按鈕
-            mediaContent = `<img class="card-media" src="${card.image}" alt="${card.word}">`;
+            // 未解鎖：只顯示圖片，不顯示播放按鈕
+            mediaContent = `
+              <div class="media-container" style="position: relative; width: 100%; height: 50%;">
+                <img class="card-media" src="${card.image}" alt="${card.word}">
+              </div>
+            `;
           }
         } else {
-          // 沒有影片的卡片：只顯示圖片
-          mediaContent = `<img class="card-media" src="${card.image}" alt="${card.word}">`;
+          // 沒有影片或未解鎖：顯示圖片或影片縮圖
+          if (isImageMP4) {
+            // image 是 MP4 但未解鎖：顯示靜態圖片或禁用影片
+            if (isUnlocked) {
+              // 已解鎖：顯示影片的第一幀作為縮圖
+              mediaContent = `
+                <div class="media-container" style="position: relative; width: 100%; height: 50%;">
+                  <video class="card-media" muted playsinline>
+                    <source src="${card.image}" type="video/mp4">
+                  </video>
+                </div>
+              `;
+            } else {
+              // 未解鎖：顯示靜態圖片或禁用影片
+              mediaContent = `
+                <div class="media-container" style="position: relative; width: 100%; height: 50%;">
+                  <img class="card-media" src="${card.image.replace('.mp4', '.jpg')}" alt="${card.word}" onerror="this.src='img/cards/placeholder.jpg'">
+                </div>
+              `;
+            }
+          } else {
+            // 一般圖片
+            mediaContent = `<img class="card-media" src="${card.image}" alt="${card.word}">`;
+          }
         }
 
         let ownedStampHtml = '';
@@ -1686,7 +1857,7 @@
 
         div.innerHTML = cardContent;
 
-        // 若已解鎖，才綁點擊事件開 Modal
+        // 只有已解鎖卡片才綁定點擊事件
         if (isUnlocked) {
           div.onclick = (event) => {
             // 檢查是否點擊的是影片按鈕，如果是則不處理（讓影片按鈕自己處理）
@@ -1694,23 +1865,47 @@
               return;
             }
             
-            // 所有卡片都打開 Modal
+            // 打開 Modal
             openModal(card);
           };
+          
+          // 只有已解鎖卡片的影片才添加點擊事件
+          const videoElement = div.querySelector('video');
+          if (videoElement) {
+            videoElement.addEventListener('click', (e) => {
+              e.stopPropagation();
+              if (videoElement.paused) {
+                videoElement.play();
+              } else {
+                videoElement.pause();
+              }
+            });
+          }
+          
           unlockedCount++;
-        }
-        
-        // 為影片添加點擊事件（阻止冒泡到卡片點擊事件）
-        const videoElement = div.querySelector('video');
-        if (videoElement) {
-          videoElement.addEventListener('click', (e) => {
-            e.stopPropagation();
-            if (videoElement.paused) {
-              videoElement.play();
-            } else {
-              videoElement.pause();
-            }
+        } else {
+          // 未解鎖卡片：禁用所有點擊事件
+          div.style.pointerEvents = 'none';
+          div.style.cursor = 'not-allowed';
+          
+          // 禁用未解鎖卡片的影片播放
+          const videoElements = div.querySelectorAll('video');
+          videoElements.forEach(video => {
+            video.style.pointerEvents = 'none';
+            video.controls = false;
+            video.autoplay = false;
+            video.muted = true;
+            video.pause();
           });
+          
+          // 為未解鎖卡片添加鎖定遮罩
+          const lockOverlay = document.createElement('div');
+          lockOverlay.className = 'lock-overlay';
+          lockOverlay.innerHTML = `
+            <div class="lock-icon">🔒</div>
+            <div class="lock-text">未解鎖</div>
+          `;
+          div.appendChild(lockOverlay);
         }
 
         grid.appendChild(div);
@@ -1761,16 +1956,19 @@
       // 移除舊的事件，避免重複彈窗
       modalCard.onclick = null;
 
-      // 移除 YouTube 影片按鈕
+      // 移除 YouTube 影片按鈕和影片控制按鈕
       const videoBtn = modalCard.querySelector('.video-button');
       if (videoBtn) videoBtn.remove();
+      
+      const videoControls = modalCard.querySelector('.video-controls');
+      if (videoControls) videoControls.remove();
 
-      // 強制 media-container 內圖片填滿父層
-      const img = modalCard.querySelector('.media-container img, .media-container .card-media');
-      if (img) {
-        img.style.width = '100%';
-        img.style.height = '100%';
-        img.style.objectFit = 'cover';
+      // 強制 media-container 內媒體填滿父層
+      const media = modalCard.querySelector('.media-container img, .media-container .card-media, .media-container video');
+      if (media) {
+        media.style.width = '100%';
+        media.style.height = '100%';
+        media.style.objectFit = 'cover';
       }
 
       // 清空 modalCardContainer，放入 clone 卡片
@@ -2082,6 +2280,20 @@
       }
     }
     
+    // 新增：切換影片播放/暫停
+    function toggleVideoPlayback(controlElement) {
+      const video = controlElement.parentElement.querySelector('video');
+      if (!video) return;
+      
+      if (video.paused) {
+        video.play();
+        controlElement.textContent = '⏸️ 暫停';
+      } else {
+        video.pause();
+        controlElement.textContent = '▶️ 播放';
+      }
+    }
+    
     function extractYouTubeId(url) {
       const patterns = [
         /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/,
@@ -2302,6 +2514,8 @@
     }
 
     // 碎片轉換星星功能已移除（碎片系統已移除）
+
+
 
     // 顯示生日設定右鍵選單
     function showBirthdayContextMenu(e, card) {
