@@ -7,24 +7,11 @@ console.log('cards.js 載入測試');
 //    只包含：word, zh, image, rarity, category, description, effect
 // ===============================
 const baseCards = [
-  {
-    "word": "Cinderella",
-    "zh": "辛德瑞拉",
-    "image": "https://www.bing.com/th/id/OGC.4f658e6dd75a9541f7567299e24729fa?r=0&o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fFz7nXV5N8JP20%2fgiphy.gif&ehk=4bQEQlwZCYKzP7usk07s8CVwGK6CD9SRZbt%2bGTu2cR0%3d",
-    "video": "https://youtu.be/cxGo_Wb7K9Q?si=LoR85Y06i-XFyKRG",
-    "rarity": "超稀有",
-    "category": "童話故事",
-    "description": "灰姑娘在暮色南瓜馬車裡奔向夢想，用一隻水晶鞋書寫逆轉人生的詩篇。",
-    "effect": {
-      "type": "time_extend",
-      "value": 60,
-      "description": "增加答題時間 60 秒"
-    }
-  },
+
 {
     "word": "Tanjiro Kamado",
     "zh": "竈門炭治郎",
-    "image": "https://tse4.mm.bing.net/th/id/OIP.pxdDQN2TlrNz6FRno75pegHaKQ?r=0&cb=thvnext&w=640&h=886&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/4a/48/dd/4a48dd7ab110251bd06c5c0e8616db27_720w.mp4",
     "video": "https://youtu.be/ICDw7LQMSvE?si=EGZuQJGp4JNi1Y8Z",
     "rarity": "超稀有",
     "category": "鬼滅之刃",
@@ -38,7 +25,7 @@ const baseCards = [
   {
     "word": "Nezuko Kamado",
     "zh": "竈門禰豆子",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.hT_dZ46bkNlmwWXZgPy0FQAAAA?r=0&cb=thvnext&w=384&h=768&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://v1.pinimg.com/videos/mc/720p/ad/f0/26/adf0261f4d3736169c69a75a6086d942.mp4",
     "video": "https://youtu.be/gtgIlIXWEhI?si=zsc2qwQnuPuYxRQW",
     "rarity": "超稀有",
     "category": "鬼滅之刃",
@@ -52,9 +39,9 @@ const baseCards = [
   {
     "word": "Zenitsu Agatsuma",
     "zh": "我妻善逸",
-    "image": "https://img.freepik.com/premium-photo/anime-art-color-full_1120177-664.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/99/70/72/9970720eef5bed34585a1923195065ee.mp4",
     "video": "https://youtu.be/Wb3JeBItZfw",
-    "rarity": "稀有",
+    "rarity": "超稀有",
     "category": "鬼滅之刃",
     "description": "懦弱外表下隱藏雷之閃電，熟睡中才能展現真本事。",
     "effect": {
@@ -66,7 +53,7 @@ const baseCards = [
   {
     "word": "Inosuke Hashibira",
     "zh": "嘴平伊之助",
-    "image": "https://c-ssl.duitang.com/uploads/item/201909/28/20190928143924_eavrc.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/46/5b/d8/465bd8a56df1bc823c6e9713ce97b6af.mp4",
     "video": "https://youtu.be/R5Bgo1Vc7qk",
     "rarity": "稀有",
     "category": "鬼滅之刃",
@@ -80,7 +67,7 @@ const baseCards = [
   {
     "word": "Giyu Tomioka",
     "zh": "冨岡義勇",
-    "image": "https://pm1.narvii.com/7590/873c94f94b6e7cf10ce1952a5b80820bb01e5ader1-480-729v2_hq.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/45/83/8f/45838f18ebc76c608be5a90605192a62.mp4",
     "video": "https://youtu.be/wvjFAHQG6E0?si=FGVBEpHqnG_hCB3Q",
     "rarity": "稀有",
     "category": "鬼滅之刃",
@@ -94,7 +81,7 @@ const baseCards = [
   {
     "word": "Kyojuro Rengoku",
     "zh": "煉獄杏壽郎",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.JZcxwXqwjFaX7r2lGLdowAAAAA?r=0&cb=thvnext&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://v1.pinimg.com/videos/mc/720p/41/61/ca/4161cac55946a4eeb4031af03995e572.mp4",
     "video": "https://youtu.be/1Ayj9FKKfp0?si=H1rDAWBeHa5lFe4x",
     "rarity": "超稀有",
     "category": "鬼滅之刃",
@@ -108,7 +95,7 @@ const baseCards = [
   {
     "word": "Shinobu Kocho",
     "zh": "胡蝶忍",
-    "image": "https://pic4.zhimg.com/v2-ff3d31b0c96b1eaffb40f7ca26d75233_r.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/13/85/d9/1385d991a1fa7a2850af0a5ea8d6beb8.mp4",
     "video": "https://youtu.be/X7OC4B5VXpU?si=zQVOIjw3pGA8wjnp",
     "rarity": "稀有",
     "category": "鬼滅之刃",
@@ -122,7 +109,7 @@ const baseCards = [
 {
     "word": "Pikachu",
     "zh": "皮卡丘",
-    "image": "https://media.giphy.com/media/P3BGUpjP9JeUM/giphy.gif",
+    "image": "https://v1.pinimg.com/videos/mc/720p/47/49/d2/4749d201d95280c1af14b35fb1efb467.mp4",
     "video": "https://youtu.be/FUNo4aB8xFE?si=napJxJUCkmW6OObI",
     "rarity": "超稀有",
     "category": "寶可夢",
@@ -136,7 +123,7 @@ const baseCards = [
   {
     "word": "Charizard",
     "zh": "噴火龍",
-    "image": "https://embed.pixiv.net/artwork.php?illust_id=103837292",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/33/7b/8d/337b8d5a608afe3cf0f4a3520c2853bd_720w.mp4",
     "video": "https://youtu.be/QoFdXuHn3_M?si=g-yMZ1_L40vcjol1",
     "rarity": "超稀有",
     "category": "寶可夢",
@@ -150,9 +137,9 @@ const baseCards = [
   {
     "word": "Bulbasaur",
     "zh": "妙蛙種子",
-    "image": "https://i.pinimg.com/736x/0a/50/8c/0a508cc2edee90b92c46a932a8a75eab.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/68/1d/a8/681da8f23f2c584bc1ef8531b912aead_720w.mp4",
     "video": "https://youtu.be/LnqAHTWXORw?si=EKm465UsyVYqpFBh",
-    "rarity": "普通",
+    "rarity": "超稀有",
     "category": "寶可夢",
     "description": "植物系新手好選擇，吸收陽光蓄勢待發。",
     "effect": {
@@ -192,7 +179,7 @@ const baseCards = [
   {
     "word": "Gengar",
     "zh": "耿鬼",
-    "image": "https://avatarfiles.alphacoders.com/375/thumb-350-375363.webp",
+    "image": "https://img.3dmgame.com/uploads/images/news/20240920/1726810390_549833.gif",
     "video": "https://youtu.be/KTaWqOpfEBM?si=E2iAHKAnhh03RlCp",
     "rarity": "稀有",
     "category": "寶可夢",
@@ -265,7 +252,7 @@ const baseCards = [
     "zh": "虎杖悠仁",
     "image": "https://tse1.mm.bing.net/th/id/OIP.njZQzrCZP-rPRuPLn3cQ-gHaLH?r=0&cb=thvnext&w=1080&h=1620&rs=1&pid=ImgDetMain&o=7&rm=3",
     "video": "https://youtu.be/vvtIX9fPwsk?si=u-FRDBLEWgCqrqMK",
-    "rarity": "超稀有",
+    "rarity": "稀有",
     "category": "咒術迴戰",
     "description": "吞下兩面宿儺的手指後仍堅守人性，拳頭傳遞正義與信念。",
     "effect": {
@@ -291,7 +278,7 @@ const baseCards = [
   {
     "word": "Nobara Kugisaki",
     "zh": "釘崎野薔薇",
-    "image": "https://tse3.mm.bing.net/th/id/OIP.U9ImODUc1aUXLfToEA71xAAAAA?r=0&cb=thvnext&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://i.pinimg.com/736x/28/84/45/2884450a90ea1fb4d6b0e9c23076c413.jpg",
     "video": "https://youtu.be/41etewJwITI?si=YVP3US49BPM7dhTa",
     "rarity": "普通",
     "category": "咒術迴戰",
@@ -305,7 +292,7 @@ const baseCards = [
   {
     "word": "Satoru Gojo",
     "zh": "五條悟",
-    "image": "https://cdn.fondecranvip.com/2024/12/MExpfAlx-fond-decran-Gojo-Sotaru-72.webp",
+    "image": "https://v1.pinimg.com/videos/mc/720p/53/5a/b3/535ab3a98f8f2e24b1bf333f6b2fb025.mp4",
     "video": "https://youtu.be/OBrDE0WyAP4?si=5LfpdnHq5Tf-HFL-",
     "rarity": "超稀有",
     "category": "咒術迴戰",
@@ -319,7 +306,7 @@ const baseCards = [
   {
     "word": "Sukuna",
     "zh": "兩面宿儺",
-    "image": "https://i.pinimg.com/736x/73/19/72/731972fddbc1a466b327bf44856121d5.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/56/c9/d0/56c9d091fc4397ca5d4007c18ce336de.mp4",
     "video": "https://youtu.be/rYXih2N84QE?si=gzlLoSfZtlGIlBye",
     "rarity": "超稀有",
     "category": "咒術迴戰",
@@ -347,7 +334,7 @@ const baseCards = [
   {
     "word": "Toge Inumaki",
     "zh": "狗卷棘",
-    "image": "https://w0.peakpx.com/wallpaper/998/705/HD-wallpaper-toge-inumaki-bonito-flake-jjk-mouth-anime.jpg",
+    "image": "https://i.pinimg.com/736x/01/49/46/014946034b327c708ca7be80a2b3f628.jpg",
     "video": "https://youtu.be/q9OjDw_KXoc?si=RmNEio_izKMLbQ-m",
     "rarity": "普通",
     "category": "咒術迴戰",
@@ -361,7 +348,7 @@ const baseCards = [
   {
     "word": "Maki Zenin",
     "zh": "禪院真希",
-    "image": "https://wallpapers.com/images/hd/maki-zenin-jujutsu-kaisen-artwork-34g5hhhmxyumrs3c.jpg",
+    "image": "https://i.pinimg.com/736x/c6/71/a6/c671a632a8d1dfaf1401bbdf1e0664c3.jpg",
     "video": "https://youtu.be/zv5lApSubRw?si=AcEsKzqS8WqFpNLR",
     "rarity": "普通",
     "category": "咒術迴戰",
@@ -389,7 +376,7 @@ const baseCards = [
   {
     "word": "Yuta Okkotsu",
     "zh": "乙骨憂太",
-    "image": "https://pbs.twimg.com/media/FX30zoiVQAE5wzS.jpg:small",
+    "image": "https://v1.pinimg.com/videos/mc/720p/b2/e5/8e/b2e58e7244b8dec266e035bb333b724b.mp4",
     "video": "https://youtu.be/TBVqMhl_vdM?si=b95e0ULbuEOit61s",
     "rarity": "超稀有",
     "category": "咒術迴戰",
@@ -403,7 +390,7 @@ const baseCards = [
 {
     "word": "Gon Freecss",
     "zh": "小傑",
-    "image": "https://i.pinimg.com/736x/04/49/8a/04498ac8f0c728304c855e3cb31e2288.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/60/0f/6a/600f6a6e9ede11fb1ab7babcc4869227_720w.mp4",
     "video": "https://youtu.be/fZCOwFtlbIA?si=g9TY5M-6MUNO_aVC",
     "rarity": "超稀有",
     "category": "獵人",
@@ -417,9 +404,9 @@ const baseCards = [
   {
     "word": "Killua Zoldyck",
     "zh": "奇犽",
-    "image": "https://mfiles.alphacoders.com/101/thumb-350-1013758.png",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/7e/bf/bb/7ebfbbb1ced7f42f3dd845486618adfd_720w.mp4",
     "video": "https://youtu.be/m_V7rNR04yg?si=gLKBWhDsClLZBpX5",
-    "rarity": "稀有",
+    "rarity": "超稀有",
     "category": "獵人",
     "description": "暗殺家族出身，電光閃現間決勝負。",
     "effect": {
@@ -431,9 +418,9 @@ const baseCards = [
   {
     "word": "Kurapika",
     "zh": "酷拉皮卡",
-    "image": "https://lh3.googleusercontent.com/pw/AP1GczPdLG8eUg8Gtj4osRBxMU-raW3XgqAU5MfivCZUg4sX6gCXP2SNTVUBkWYsm3CDgbOWmMTh4kM8lKRc_3X2W85QCYoHQyLU4m-6_3TP5C-m6iIPFkKC1a7ZanKVyqcIOsYRf1CZYLJWSRbMT7e097FMPg=w2667-h1499-s-no",
+    "image": "https://v1.pinimg.com/videos/iht/720p/75/eb/0f/75eb0f7df849a3e1c40e1c43541eafe3.mp4",
     "video": "https://youtu.be/t9JjGBHOq9Q?si=4VokVXPLDMQM_qjC",
-    "rarity": "稀有",
+    "rarity": "超稀有",
     "category": "獵人",
     "description": "鎖鍊鎖住仇恨，燃燒著緋紅雙眼的復仇者。",
     "effect": {
@@ -459,9 +446,9 @@ const baseCards = [
   {
     "word": "Hisoka",
     "zh": "西索",
-    "image": "https://i.pinimg.com/736x/c3/c4/71/c3c4717cf870f4df8686ae3972afcdb3.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/e2/dd/02/e2dd028e1a57a6579da716111e958cab.mp4",
     "video": "https://youtu.be/iDyon3z1KP8?si=rg8VvtmMvJub51_6",
-    "rarity": "稀有",
+    "rarity": "超稀有",
     "category": "獵人",
     "description": "變化系殺戮魔術師，詭譎莫測、危險又迷人。",
     "effect": {
@@ -475,7 +462,7 @@ const baseCards = [
     "zh": "尼特羅",
     "image": "https://wallpapercave.com/wp/wp12542469.jpg",
     "video": "https://youtu.be/wk961M-EoRk?si=n_1pdGAj-aDyjVnC",
-    "rarity": "超稀有",
+    "rarity": "稀有",
     "category": "獵人",
     "description": "最強獵人之一，百式觀音如神降臨。",
     "effect": {
@@ -489,7 +476,7 @@ const baseCards = [
     "zh": "梅路艾姆",
     "image": "https://i.ytimg.com/vi/Ce7KBNMNqpk/maxresdefault.jpg",
     "video": "https://youtu.be/9jiqcnwrsuk?si=GdR7ER1pRSKKE52O",
-    "rarity": "超稀有",
+    "rarity": "稀有",
     "category": "獵人",
     "description": "蟻王之尊，智慧與力量的巔峰存在。",
     "effect": {
@@ -796,8 +783,8 @@ const baseCards = [
   {
     "word": "Coco",
     "zh": "可可夜總會",
-    "image": "https://example.com/coco.jpg",
-    "video": "https://youtu.be/EXAMPLE_COCO",
+    "image": "https://v1.pinimg.com/videos/mc/720p/89/9f/4d/899f4d048ad6a0d3640de8bbe01913a2.mp4",
+    "video": "https://youtu.be/hAYUQ1ltJj0?si=6GqSPp_qu4kCOt2H",
     "rarity": "超稀有",
     "category": "皮克斯宇宙",
     "description": "穿越亡靈之地，用音樂尋找家族的記憶與真相。",
@@ -877,21 +864,7 @@ const baseCards = [
       "description": "降低戰鬥緊張度，減緩我方傷害"
     }
   },
-  {
-    "word": "Bullet Ant",
-    "zh": "子彈蟻",
-    "image": "https://example.com/bulletant.jpg",
-    "video": "https://youtu.be/EXAMPLE_BULLETANT",
-    "rarity": "稀有",
-    "category": "亞馬遜雨林",
-    "description": "世界最痛的蟄刺，連勇士儀式也難以承受其一擊。",
-    "effect": {
-      "type": "pain_sting",
-      "value": 100,
-      "description": "單體爆擊攻擊，有機率令敵方癱瘓"
-    }
-  },
-  {
+   {
     "word": "Tamandua",
     "zh": "小食蟻獸",
     "image": "https://example.com/tamandua.jpg",
@@ -964,7 +937,7 @@ const baseCards = [
   {
     "word": "Amazon Poison Frog",
     "zh": "亞馬遜毒蛙",
-    "image": "https://example.com/poisonfrog.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/fa/44/30/fa443027ed28c4fd71fd7b4720928ae7.mp4",
     "video": "https://youtu.be/EXAMPLE_FROG",
     "rarity": "稀有",
     "category": "亞馬遜雨林",
@@ -1370,7 +1343,7 @@ const baseCards = [
   {
     "word": "Choso",
     "zh": "脹相",
-    "image": "https://example.com/choso.gif",
+    "image": "https://i.pinimg.com/736x/0d/42/5f/0d425fdfd562a59edd9c987c0a3bc1a8.jpg",
     "video": "https://youtu.be/EXAMPLE_CHOSO",
     "rarity": "稀有",
     "category": "咒術迴戰",
@@ -1387,7 +1360,7 @@ const baseCards = [
     "zh": "快龍",
     "image": "https://example.com/dragonite.gif",
     "video": "https://youtu.be/EXAMPLE_DRAGONITE",
-    "rarity": "超稀有",
+    "rarity": "稀有",
     "category": "寶可夢",
     "description": "溫柔力量的巨龍，一擊龍爪扭轉戰局。",
     "effect": {
@@ -1401,7 +1374,7 @@ const baseCards = [
     "zh": "超夢",
     "image": "https://example.com/mewtwo.gif",
     "video": "https://youtu.be/EXAMPLE_MEWTWO",
-    "rarity": "超稀有",
+    "rarity": "稀有",
     "category": "寶可夢",
     "description": "人造奇蹟，念力之王，戰場上無可匹敵。",
     "effect": {
@@ -1413,7 +1386,7 @@ const baseCards = [
   {
     "word": "Muzan Kibutsuji",
     "zh": "鬼舞辻無慘",
-    "image": "https://example.com/muzan.gif",
+    "image": "https://v1.pinimg.com/videos/mc/720p/75/fd/db/75fddb05f0547a1ee67d52d5c3463023.mp4",
     "video": "https://youtu.be/Q9wKtrjF45w",
     "rarity": "超稀有",
     "category": "鬼滅之刃",
@@ -1539,7 +1512,7 @@ const baseCards = [
   {
     "word": "Gaara",
     "zh": "我愛羅",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.sJ9uNIDiF4xRjvN3zi1MkAHaJ4?w=640&h=853&rs=1&pid=ImgDetMain",
+    "image": "https://i.pinimg.com/736x/71/c1/53/71c15395e7a6af19e6ee85c036bbb383.jpg",
     "video": "https://youtu.be/0b7cAEG3W1g",
     "rarity": "稀有",
     "category": "火影忍者",
@@ -1697,7 +1670,7 @@ const baseCards = [
   {
     "word": "Ursula",
     "zh": "烏蘇拉",
-    "image": "https://24.media.tumblr.com/tumblr_mbp7jgLjCi1rncdgao1_500.gif",
+    "image": "https://v1.pinimg.com/videos/mc/720p/3e/0a/be/3e0abeb08a2ba2ba3473e63fe6df2c4f.mp4",
 "video": "https://youtu.be/4t3kQf3lWBs?si=1k_ggElN08XibXcj",
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1706,7 +1679,7 @@ const baseCards = [
   {
     "word": "Hades",
     "zh": "哈迪斯",
-    "image": "https://www.bing.com/th/id/OGC.3a0748f410c080b2fba5313f9d410938?r=0&o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.tenor.com%2fDQXgQEFWAb4AAAAC%2fhades-angry.gif&ehk=EHeKejYAhawa96%2bob61%2bc7tRR7dxPdHi5xlIeq%2bN6Zc%3d",
+    "image": "https://v1.pinimg.com/videos/mc/720p/fc/90/a3/fc90a3c6b14bc8564495888463a73244.mp4",
 "video": "https://youtu.be/kjT2vygjFFg?si=t0xm20E9m8p5MP6S",
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1760,7 +1733,7 @@ const baseCards = [
   {
     "word": "Fairy Godmother",
     "zh": "仙女教母",
-    "image": "https://figurinepop.com/public/2019/12/fairygodmother1_2.jpg",
+    "image": "https://i.pinimg.com/736x/77/30/ea/7730ea2c4bd0c6ed3d4ba6292014f3fc.jpg",
  "video": "https://youtu.be/z3QeYtv1OPs?si=6Pv4k3sMLWh9DAqk",
     "rarity": "普通",
     "category": "童話故事",
@@ -1787,7 +1760,7 @@ const baseCards = [
   {
     "word": "Mickey Mouse",
     "zh": "米奇老鼠",
-    "image": "https://www.gifcen.com/wp-content/uploads/2023/06/mickey-mouse-gif-6.gif",
+    "image": "https://v1.pinimg.com/videos/iht/720p/84/ca/b9/84cab913b9164a83945d90e4fbaba075.mp4",
     "video": "https://www.youtube.com/watch?v=REHJ1lz_HLQ",
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1796,7 +1769,7 @@ const baseCards = [
   {
     "word": "Donald Duck",
     "zh": "唐老鴨",
-    "image": "https://www.bing.com/th/id/OGC.6056896deb5520bcb82d0c05fa704fbc?r=0&o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fi.pinimg.com%2foriginals%2fbc%2f38%2f8c%2fbc388c6b24df2d081239efd48121da4c.gif&ehk=z5e1CUqqbXFE5Mv70ujh7eGemMJhih%2fL5z6X6E%2bpZmQ%3d",
+    "image": "https://i.pinimg.com/originals/be/87/9f/be879f8723cbcf29f41cab6f4e0a8e21.gif",
 "video": "https://youtu.be/PGQ0Ge6kiz8?si=yPe1_Pe-IWyC9VU8",
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1814,7 +1787,7 @@ const baseCards = [
   {
     "word": "Minnie Mouse",
     "zh": "米妮老鼠",
-    "image": "https://www.bing.com/th/id/OGC.d69bb4b0b211656f160664bea95a6a51?r=0&pid=1.7&rurl=http%3a%2f%2fimg.soogif.com%2f3zTApQTIwC7VdEVSffjiP7lbSI48SSv5.gif&ehk=BH12WKNhfiAz8b3jHVytvQJyPCmouOzoH%2fQx0nJxTy0%3dg",
+    "image": "https://i.pinimg.com/originals/18/45/81/184581897ec8c085d106c9a5f71064fa.gif",
  "video": "https://youtu.be/7mTMzABsKqo?si=HFDp909G0tMssEva",   
  "rarity": "超稀有",
     "category": "童話故事",
@@ -1841,7 +1814,7 @@ const baseCards = [
   {
     "word": "Simba",
     "zh": "辛巴",
-    "image": "https://th.bing.com/th/id/R.cc9c56af0addebadde3843565b19a27c?rik=QO6iEtOM9w3e3w&riu=http%3a%2f%2fimg.japhub.com%2f201606%2fYdQWr7JX.gif&ehk=O%2fnhoIkFTn2U3tk4Zb5cZL%2bIYu6bbBNOALUEUcDrCJo%3d&risl=&pid=ImgRaw&r=0",
+    "image": "https://i.pinimg.com/originals/bb/64/10/bb64103ca901744582e69d899b6c3ff9.gif",
  "video": "https://youtu.be/kaOIxll4LCA?si=vvwb1DrS-pcsmFUg", 
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1859,7 +1832,7 @@ const baseCards = [
   {
     "word": "Anna",
     "zh": "安娜",
-    "image": "https://th.bing.com/th/id/R.25d24c57ecbd811a3d82d13a2ff49192?rik=98T1cwK8gnKKzw&riu=http%3a%2f%2fimg.soogif.com%2fzGQwoJNuKMjjdGvK4aZggCnZ8xAr3rqX.gif&ehk=2Yj7dCfUbi%2fwfdTFdDRkl4aAqKeq0jnblfhrCKVBQkQ%3d&risl=&pid=ImgRaw&r=0",
+    "image": "https://v1.pinimg.com/videos/mc/720p/a8/f4/a2/a8f4a2f4704b9bc7a1b0e729cd430662.mp4",
  "video": "https://youtu.be/TeQ_TTyLGMs?si=HfsjmXmgDNQ42mJa",
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1868,7 +1841,7 @@ const baseCards = [
   {
     "word": "Ariel",
     "zh": "愛麗兒",
-    "image": "https://www.bing.com/th/id/OGC.807b572168a991d930a687b75e0eb78f?r=0&o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fs.yimg.com%2fuu%2fapi%2fres%2f1.2%2fBoENJU12iqvXfTOYmn3M0g--%7eB%2faD0zMDM7dz01MDA7YXBwaWQ9eXRhY2h5b24-%2fhttp%3a%2f%2f66.media.tumblr.com%2fdc0e8cc27b9b34e0de06511d674ba0d5%2ftumblr_inline_o8g6a2sXl51tvjluf_500.gif&ehk=I0qvOxuvdu5ijJYYksXp27eqSSL%2fS1lkmS148RJ9Qag%3d",
+    "image": "https://v1.pinimg.com/videos/mc/720p/fd/3e/92/fd3e925145134a1b50bc31023c226731.mp4",
  "video": "https://youtu.be/KWk4emh3-qc?si=X7ac8C91h5tli35m",
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1910,6 +1883,20 @@ const baseCards = [
     "category": "童話故事",
     "description": "以勇氣與智慧代父從軍，打破性別桎梏的女戰士。"
   },
+ {
+    "word": "Cinderella",
+    "zh": "辛德瑞拉",
+    "image": "https://www.bing.com/th/id/OGC.4f658e6dd75a9541f7567299e24729fa?r=0&o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fFz7nXV5N8JP20%2fgiphy.gif&ehk=4bQEQlwZCYKzP7usk07s8CVwGK6CD9SRZbt%2bGTu2cR0%3d",
+    "video": "https://youtu.be/cxGo_Wb7K9Q?si=LoR85Y06i-XFyKRG",
+    "rarity": "超稀有",
+    "category": "童話故事",
+    "description": "灰姑娘在暮色南瓜馬車裡奔向夢想，用一隻水晶鞋書寫逆轉人生的詩篇。",
+    "effect": {
+      "type": "time_extend",
+      "value": 60,
+      "description": "增加答題時間 60 秒"
+    }
+  },
   {
     "word": "Pocahontas",
     "zh": "波卡洪塔斯",
@@ -1922,7 +1909,7 @@ const baseCards = [
   {
     "word": "Tiana",
     "zh": "蒂安娜",
-    "image": "https://wallpapercave.com/wp/wp4294583.png",
+    "image": "https://i.pinimg.com/736x/d8/4f/cb/d84fcb3922ddac533bfe6cd81c2b6008.jpg",
  "video": "https://youtu.be/jKXDtjaacE8?si=ubV949Lsg9ugCjXv",
     "rarity": "稀有",
     "category": "童話故事",
@@ -1933,14 +1920,14 @@ const baseCards = [
     "zh": "刀疤",
     "image": "https://media.giphy.com/media/l1l3TCGoCsY0g/giphy.gif",
  "video": "https://youtu.be/5WsZdDDQ8b0?si=FRM4xywvheh836PA",
-    "rarity": "超稀有",
+    "rarity": "稀有",
     "category": "童話故事",
     "description": "《獅子王》中的複雜反派，陰影中編織權力與復仇。"
   },
   {
     "word": "Elsa",
     "zh": "艾莎",
-    "image": "https://hips.hearstapps.com/hmg-prod/images/frozen-2-elsa-the-snow-queen-42638065-540-226-1573763977.gif?crop=1xw:1xh;center",
+    "image": "https://v1.pinimg.com/videos/mc/720p/e6/cd/44/e6cd4479a71e6754d5f9fedbd565e4c2.mp4",
  "video": "https://youtu.be/L0MK7qz13bU?si=KQ3ADhkoI4xPx79g",
     "rarity": "超稀有",
     "category": "童話故事",
@@ -2051,7 +2038,7 @@ description: "隱匿於星河間的無形之網，撐起虛空之軀。", youtub
 
   // 星耀契約類型 (共20張)
   { word: "wand", zh: "魔杖", 
-image: "https://www.bing.com/th/id/OGC.be4fc7a5eccc21638fc2da9d86dee90a?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fdl.bbs.9game.cn%2fattachments%2fforum%2f201911%2f05%2f113421knnct3ce53igez34.gif&ehk=OsjYN1hmITzHxl%2bhkJqLxkDRXAut%2f%2fa%2fNxJZG9zS4Xo%3d", 
+image: "https://i.pinimg.com/736x/2f/e9/ad/2fe9ade30667eeff887e212b2330c323.jpg", 
 video: "https://youtu.be/SYAoPDBZ_Tk?si=IOy1j63i5MQnVAEB", 
 rarity: "普通", 
 category: "星耀契約", 
@@ -2065,14 +2052,14 @@ category: "星耀契約",
 description: "封印古老符文的卷頁，知識與力量並存。" },
   
   { word: "wizard", zh: "巫師", 
-image: "https://www.bing.com/th/id/OGC.232ddda9d78a57dd6efd41e2a9be749a?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fWLxnzjxV7aIiQ%2fgiphy.gif&ehk=jIz5PCJCw1XNw0LU9nLMYfb0Rgc63KLyxMHZ%2bUSxHf4%3d", 
+image: "https://i.pinimg.com/736x/92/6f/bf/926fbf82d9f015be2a750e81a5a815d8.jpg", 
 video: "https://youtu.be/jKECMTQPZcE?si=uoikkvm2TD5Rj-Kb", 
 rarity: "稀有", 
 category: "星耀契約", 
 description: "掌控元素的智者，星塵與雷電的呼喚者。" },
 
   { word: "dragon", zh: "龍", 
-image: "img/cards/dragon.png", 
+image: "https://v1.pinimg.com/videos/iht/expMp4/ae/28/15/ae2815e51c13405486839c27615289be_720w.mp4", 
 video: "https://youtu.be/mch8LbGumXM?si=DW8MH4nw8WWbwxDG", 
 rarity: "超稀有", category: "星耀契約", 
 description: "古老鱗片與火焰，傳說在它的咆哮中重生。", youtube: "https://www.youtube.com/watch?v=1A-Nf3QIJjM" },
@@ -2108,30 +2095,58 @@ video: "https://youtu.be/zXWtSXfxx4E?si=kQp-VgmPtBT43YUZ",
 rarity: "稀有", category: "虛界驛站", description: "半人半機械的強化戰士，擁有驚人的反應與力量。" },
 
   { word: "ai", zh: "人工智慧", 
-image: "https://www.bing.com/th/id/OGC.5ad350b1154e38a969a0472cd4a3ba12?r=0&pid=1.7&rurl=https%3a%2f%2fimg.php.cn%2fupload%2farticle%2f000%2f887%2f227%2f171013381653493.gif&ehk=7TOP5a4GfICodUTadt%2b7OFZai1ZP2%2ffCPnYtoq4wy9o%3d", 
+image: "https://v1.pinimg.com/videos/mc/720p/b7/33/cf/b733cf1bc760d6e762a36e3db7a92bcd.mp4", 
 video: "https://youtu.be/i0UxYDqlX6o?si=lVKq9TL5vOunyD66", 
 rarity: "超稀有", 
 category: "虛界驛站", 
 description: "具備自我意識與超高邏輯的智慧核心，可掌控整個系統。", youtube: "https://www.youtube.com/watch?v=4V2xXqFgB_c" },
 
   { word: "mecha", zh: "機甲", 
-image: "https://www.bing.com/th/id/OGC.8aebde8056def027cb605936d32e2f50?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fwww.niusnews.com%2fupload%2fimgs%2fdefault%2f2018JUNedie%2fbumblebee%2f4.gif&ehk=gZ7uM93yrZghL83i0CYy%2bJKNytfEd%2fr514yKaNaNfdI%3d", 
+image: "https://v1.pinimg.com/videos/mc/720p/74/41/f0/7441f064ec19917c4944bc6f14735249.mp4", 
 video: "https://youtu.be/248yffzQAfo?si=cTWdsqghZQeQd2hY", 
 rarity: "稀有", 
 category: "虛界驛站", 
 description: "由人類駕駛的大型機器戰甲，是未來戰爭的主力。" },
 
-  { word: "hologram", zh: "全息影像", image: "https://www.techhub.in.th/wp-content/uploads/2017/01/technology-2017-9.jpg", rarity: "普通", category: "虛界驛站", description: "利用光學與投影技術創造的虛擬實像，用於戰術偽裝或通訊。" },
-  { word: "nanobot", zh: "奈米機器人", image: "https://th.bing.com/th/id/OIP.bFDr8-wQMsKwrfdH30LuwgHaDV?w=305&h=157&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3", rarity: "普通", category: "虛界驛站", description: "極小的機械單位，可進入體內修復細胞或進行滲透作戰。" },
-  { word: "quantumchip", zh: "量子晶片", image: "https://th.bing.com/th/id/OIP.89-tisQ9Wdbp8X55JABaVgHaEo?w=234&h=180&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3", rarity: "超稀有", category: "虛界驛站", description: "利用量子原理運作的核心晶片，能大幅提升運算效能。" },
-  { word: "warpdrive", zh: "曲速引擎", image: "https://th.bing.com/th/id/OIP.y5WYkui8k6IP_Vn6Q7G8wAHaEK?w=322&h=181&c=7&r=0&o=7&dpr=2&pid=1.7&rm=3", rarity: "超稀有", category: "虛界驛站", description: "能扭曲時空以超光速旅行的高科技裝置。" },
-
-  // 神話生物類型 (共7張)
+  { word: "hologram", zh: "全息影像", image: "https://v1.pinimg.com/videos/iht/expMp4/6d/92/5d/6d925d3f5fd150e04c152ecc1e0dcb1c_720w.mp4", rarity: "普通", category: "虛界驛站", description: "利用光學與投影技術創造的虛擬實像，用於戰術偽裝或通訊。" },
+  
+   // 神話生物類型 (共7張)
   { word: "phoenix", zh: "鳳凰", 
-image: "https://th.bing.com/th/id/OIP.UkQZzWL9blyqMhrOvjpYxQHaJ4?w=600&h=800&rs=1&pid=ImgDetMain",
+image: "https://v1.pinimg.com/videos/iht/expMp4/f0/e3/4d/f0e34d18af3c431e4fac6101d88dad0d_720w.mp4",
 video: "https://youtu.be/vbI6YYwPKDQ?si=d3qDs4SrEbXOnvxa", 
 rarity: "超稀有", category: "神話生物", 
 description: "浴火重生于曠野，尾羽如朝陽，靈魂永不熄滅。", youtube: "https://www.youtube.com/watch?v=8jLOx1hD3_o" },
+{
+    "word": "kitsune",
+    "zh": "狐狸精",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/72/b3/fe/72b3fe4a53bdcc19102ecab769369ef7_720w.mp4",
+    "video": "https://youtu.be/FoNnTM5Eb_E?si=KVg336U3BSh90T3C",
+    "youtube": "https://www.youtube.com/watch?v=4V2xXqFgB_c",
+    "rarity": "普通",
+    "category": "神話生物",
+    "description": "沉眠於地底深淵，夢見光明與毀滅交錯的彼端。"
+  },
+  {
+    "word": "mermaid",
+    "zh": "美人魚",
+    "image": "https://i.pinimg.com/736x/a6/1c/c4/a61cc41137637459ef0ba795fac9c2b5.jpg",
+    "video": "https://youtu.be/sfXkGwdmBjQ?si=Aln0M5UM7E1Tg9JL",
+    "youtube": "https://www.youtube.com/watch?v=HP-fF3HeB3g",
+    "rarity": "普通",
+    "category": "神話生物",
+    "description": "歌聲縈繞浪心，銀鱗撩動星光，她在浪花後輕吟愛與孤獨。"
+  },
+  {
+    "word": "basilisk",
+    "zh": "蛇怪",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/e5/d8/26/e5d826ebc4a584e028fdb77d65e9209b_720w.mp4",
+    "video": "https://youtu.be/X9XqVE-xx1E",
+    "youtube": "https://www.youtube.com/watch?v=5RUFKRj3LhU",
+    "rarity": "稀有",
+    "category": "神話生物",
+    "description": "火羽重生，燃盡過往之灰燼，涅槃於希望與焰光之中。"
+  },
+
 
   { word: "unicorn", zh: "獨角獸", 
 image: "https://m.media-amazon.com/images/I/71i1VApBYzL._AC_SL1500_.jpg", 
@@ -2139,22 +2154,309 @@ video: "https://youtu.be/FoNnTM5Eb_E?si=KVg336U3BSh90T3C",
 rarity: "超稀有", 
 category: "神話生物", description: "白蹄踏露，角尖閃耀純潔光芒，守護夢境邊界。", youtube: "https://www.youtube.com/watch?v=4V2xXqFgB_c" },
 
+{"word": "qilin",
+    "zh": "麒麟",
+    "image": "https://i.pinimg.com/736x/9a/b0/9ab0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e.jpg",
+    "video": "https://youtu.be/qIl1In2Ki3N?si=SsTtUuVvWwXxYyZz",
+    "youtube": "https://www.youtube.com/watch?v=qIl1In2Ki3N",
+    "rarity": "超稀有",
+    "category": "神話生物",
+    "description": "麟角閃耀和煦，蹄印留香大地，它的步履護佑萬民。"
+  },
+
+ {
+    "word": "satyr",
+    "zh": "薩堤爾",
+    "image": "https://i.pinimg.com/736x/29/3a/293ac1d2e3f4a5b6c7d8e9f0a1b2c3d4.jpg",
+    "video": "https://youtu.be/sAt5Yr6C7V8?si=QqWwEeRrTtYyUuIi",
+    "youtube": "https://www.youtube.com/watch?v=sAt5Yr6C7V8",
+    "rarity": "普通",
+    "category": "神話生物",
+    "description": "長角伴笛聲，森林歡宴隨步，他的舞姿揚起花雨。"
+  },
+
   { word: "sphinx", zh: "斯芬克斯", image: "https://th.bing.com/th/id/R.1023971c501aa1fb00578146b3d94136?rik=0He4O%2fZh%2bQGmbg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-OqzM-wtK8Zg%2fUfE1U6gvpJI%2fs1600%2fimages%2b(1).jpg&ehk=oJRDRPqwIRJuuG8iBwUqDOYeZSSly4gFFhgVAtJG%2fBU%3d&risl=&pid=ImgRaw&r=0", rarity: "稀有", category: "神話生物", description: "石躯默立沙漠，智慧深邃，謎語如風語般迴盪。" },
   { word: "hydra", zh: "九頭蛇", image: "https://www.iamag.co/wp-content/uploads/2019/01/The-Art-of-Bryan-Sola-20.jpg", rarity: "超稀有", category: "神話生物", description: "每斬一頭，兩頭再生，深淵之水燃起不朽傳說。" },
   { word: "centaur", zh: "半人馬", image: "https://i.pinimg.com/originals/ce/ba/5c/ceba5ca2cd30348a7009bed55acab8d2.jpg", rarity: "普通", category: "神話生物", description: "半人馬多半都是勇猛善戰的暴烈戰士，他們可以快速的追擊敵人，也都擁有百步穿楊的神技。" },
   { word: "minotaur", zh: "牛頭人", image: "https://i.pinimg.com/originals/79/0f/8f/790f8f8c05b941d0b36dc8f89ad506a3.jpg", rarity: "稀有", category: "神話生物", description: "迷宮之心的守衛，怒吼如雷，角尖染血。" },
-  { word: "griffin", zh: "獅鷲獸", image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d6bac9e7-4240-4e9f-9a7d-9097d6ff6365/dgadoo9-a1b3e7a5-f1d1-4c6b-be45-c0c0a8cea945.png/v1/fill/w_350,h_350,q_70,strp/mazo_by_saraheferya_dgadoo9-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcL2Q2YmFjOWU3LTQyNDAtNGU5Zi05YTdkLTkwOTdkNmZmNjM2NVwvZGdhZG9vOS1hMWIzZTdhNS1mMWQxLTRjNmItYmU0NS1jMGMwYThjZWE5NDUucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5ty2LOFGZAs8nEZMqpQSRqzqVmFKyXLBjD_-YzsLTas", rarity: "稀有", category: "神話生物", description: "金羽展翅，獅身鷲首，天空與大地的守望者。" },
+  { word: "griffin", zh: "獅鷲獸", image: "https://i.pinimg.com/736x/ce/34/aa/ce34aaa9df015a4dad547999ac2a87f3.jpg", rarity: "稀有", category: "神話生物", description: "金羽展翅，獅身鷲首，天空與大地的守望者。" },
 
-  // 蒸汽龐克類型 (共7張)
-  { word: "goggles", zh: "護目鏡", image: "https://bpic.588ku.com/element_origin_min_pic/24/01/23/901e8f6e8c00c998d631270b0491c7bf.jpg", rarity: "普通", category: "蒸汽龐克", description: "銅框琉璃，在蒸汽迷霧中捕捉時間之光。" },
-  { word: "steamengine", zh: "蒸汽機", image: "https://bpic.588ku.com/element_origin_min_pic/24/03/10/c1c7d3124fb920ef7d357de3fde09c0d.jpg!r650", rarity: "稀有", category: "蒸汽龐克", description: "咆哮的鍋爐與齒輪共舞，動力源源不絕。" },
-  { word: "airship", zh: "蒸汽飛船", image: "https://th.bing.com/th/id/OIP.klqOym812SkWyRPpRSV1TgAAAA?pid=ImgDet&w=184&h=276&c=7&dpr=1.3", rarity: "超稀有", category: "蒸汽龐克", description: "錨鏈與飛槳間，雲海的旅程由此啟程。" },
-  { word: "gear", zh: "齒輪", image: "https://png.pngtree.com/png-vector/20230809/ourlarge/pngtree-instative-vector-illustration-doodle-of-a-set-of-colorful-gears-png-image_6838811.png", rarity: "普通", category: "蒸汽龐克", description: "齒與齒咬合之際，時間與命運運轉無休。" },
-  { word: "brasskey", zh: "黃銅鑰匙", image: "https://png.pngtree.com/png-vector/20240921/ourmid/pngtree-old-vintage-key-png-image_13882194.png", rarity: "普通", category: "蒸汽龐克", description: "微小卻精緻，開啟未知機匣的黃金符咒。" },
-  { word: "mechanicalowl", zh: "機械貓頭鷹", image: "https://th.bing.com/th/id/OIP.n35jNX2twLu6NTuUXYqkvwHaHa?pid=ImgDet&w=184&h=184&c=7&dpr=1.3", rarity: "稀有", category: "蒸汽龐克", description: "銅羽靜寂飛行，夜幕中洞察每個秘密。" },
-  { word: "clockworkautomaton", zh: "發條機械人", image: "https://forbesafrique.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-30-at-10.20.52-2.jpeg", rarity: "超稀有", category: "蒸汽龐克", description: "齒輪心臟跳動，機械與靈魂的邊界模糊。" },
-
-  // 未來都市類型 (共7張)
+{
+    "word": "Monkey D. Luffy",
+    "zh": "蒙奇·D·魯夫",
+    "image": "https://i.pinimg.com/736x/a1/b2/c3/luffy.jpg",
+    "video": "https://youtu.be/LuFfY12345?si=abcXYZ",
+    "youtube": "https://www.youtube.com/watch?v=LuFfY12345",
+    "rarity": "超稀有",
+    "category": "One Piece",
+    "role": "Protagonist",
+    "description": "永遠張開無限大笑容，像陽光般點燃夥伴的夢想，每一次伸長手臂，都是奔向自由的邀請。"
+  },
+  {
+    "word": "Roronoa Zoro",
+    "zh": "羅羅亞·索隆",
+    "image": "https://i.pinimg.com/736x/b2/c3/d4/zoro.jpg",
+    "video": "https://youtu.be/Z0r0Epic12?si=XYZfGh",
+    "youtube": "https://www.youtube.com/watch?v=Z0r0Epic12",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Protagonist",
+    "description": "三刀流的劍氣如颶風掃落葉，每次迷路都是冒險的序章，鋒芒與方向感同樣銳利。"
+  },
+  {
+    "word": "Nami",
+    "zh": "娜美",
+    "image": "https://i.pinimg.com/736x/c3/d4/e5/nami.jpg",
+    "video": "https://youtu.be/N4mI09876?si=ghiJKL",
+    "youtube": "https://www.youtube.com/watch?v=N4mI09876",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Protagonist",
+    "description": "天氣與財富的雙料操盤手，掌中地圖比金幣還精準，颱風也要跟她算尾數。"
+  },
+  {
+    "word": "Usopp",
+    "zh": "烏索普",
+    "image": "https://i.pinimg.com/736x/d4/e5/f6/usopp.jpg",
+    "video": "https://youtu.be/UsOpP43210?si=jklMNO",
+    "youtube": "https://www.youtube.com/watch?v=UsOpP43210",
+    "rarity": "普通",
+    "category": "One Piece",
+    "role": "Protagonist",
+    "description": "撒謊界的詩人，用誇張的謊言編織勇氣，狙擊精準到能打進夥伴的心房。"
+  },
+  {
+    "word": "Sanji",
+    "zh": "山治",
+    "image": "https://i.pinimg.com/736x/e5/f6/g7/sanji.jpg",
+    "video": "https://youtu.be/SaNjI56789?si=stuVWX",
+    "youtube": "https://www.youtube.com/watch?v=SaNjI56789",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Protagonist",
+    "description": "鋼琴手的踢擊如交響樂章，對美食與美人一視同仁，熱情比火焰還燙。"
+  },
+  {
+    "word": "Tony Tony Chopper",
+    "zh": "托尼托尼·喬巴",
+    "image": "https://i.pinimg.com/736x/f6/g7/h8/chopper.jpg",
+    "video": "https://youtu.be/ChOpPeR123?si=abcDEF",
+    "youtube": "https://www.youtube.com/watch?v=ChOpPeR123",
+    "rarity": "普通",
+    "category": "One Piece",
+    "role": "Protagonist",
+    "description": "萌態與醫術並存，變身後的小鹿腿能踢走病痛，用愛治癒每一顆受傷的心。"
+  },
+  {
+    "word": "Nico Robin",
+    "zh": "妮可·羅賓",
+    "image": "https://i.pinimg.com/736x/g7/h8/i9/robin.jpg",
+    "video": "https://youtu.be/RoBiN24680?si=jklNOP",
+    "youtube": "https://www.youtube.com/watch?v=RoBiN24680",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Protagonist",
+    "description": "歷史的守護者，招手便能盛開花瓣雨，知識如詩，謎題如歌。"
+  },
+  {
+    "word": "Franky",
+    "zh": "佛朗基",
+    "image": "https://i.pinimg.com/736x/h8/i9/j0/franky.jpg",
+    "video": "https://youtu.be/FrAnKy13579?si=stuVWX",
+    "youtube": "https://www.youtube.com/watch?v=FrAnKy13579",
+    "rarity": "普通",
+    "category": "One Piece",
+    "role": "Protagonist",
+    "description": "鐵拳與機甲魂並行，隨心改造海賊船，自稱『SUPER』卻謙虛得像木頭。"
+  },
+  {
+    "word": "Brook",
+    "zh": "布魯克",
+    "image": "https://i.pinimg.com/736x/i9/j0/k1/brook.jpg",
+    "video": "https://youtu.be/BrOoK86420?si=defGHI",
+    "youtube": "https://www.youtube.com/watch?v=BrOoK86420",
+    "rarity": "普通",
+    "category": "One Piece",
+    "role": "Protagonist",
+    "description": "音樂骨骼通透，每次演奏都像在靈魂上打高爾夫；最愛冷笑話炸裂全場。"
+  },
+  {
+    "word": "Jinbe",
+    "zh": "吉貝爾",
+    "image": "https://i.pinimg.com/736x/j0/k1/l2/jinbe.jpg",
+    "video": "https://youtu.be/JInBe13579?si=ghiJKL",
+    "youtube": "https://www.youtube.com/watch?v=JInBe13579",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Protagonist",
+    "description": "魚人空手道大師，豪爽如海浪，最愛一句『魚魚見真章』伴隨打擊。"
+  },
+  {
+    "word": "Marshall D. Teach",
+    "zh": "馬歇爾·D·蒂奇",
+    "image": "https://i.pinimg.com/736x/01/23/45/blackbeard.jpg",
+    "video": "https://youtu.be/BLaCkBeArD456?si=DEFUVW",
+    "youtube": "https://www.youtube.com/watch?v=BLaCkBeArD456",
+    "rarity": "超稀有",
+    "category": "One Piece",
+    "role": "Antagonist",
+    "description": "在暗處編織陰謀，惡魔果實如糖果下肚；笑聲背後藏著吞天噬地的野心。"
+  },
+  {
+    "word": "Donquixote Doflamingo",
+    "zh": "唐吉訶德·多佛朗明哥",
+    "image": "https://i.pinimg.com/736x/23/45/67/doflamingo.jpg",
+    "video": "https://youtu.be/DoFlAmInGo123?si=GHIJKL",
+    "youtube": "https://www.youtube.com/watch?v=DoFlAmInGo123",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Antagonist",
+    "description": "絲線操控如舞台指揮，笑容如劇毒，將世界當做他的絢爛舞臺。"
+  },
+  {
+    "word": "Sir Crocodile",
+    "zh": "鱷魚先生",
+    "image": "https://i.pinimg.com/736x/34/56/78/crocodile.jpg",
+    "video": "https://youtu.be/CrOcOdIlE456?si=JKL012",
+    "youtube": "https://www.youtube.com/watch?v=CrOcOdIlE456",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Antagonist",
+    "description": "沙漠之王的冷酷與陰謀並存，掌心乾坤袋藏著無盡陰影。"
+  },
+  {
+    "word": "Enel",
+    "zh": "艾尼路",
+    "image": "https://i.pinimg.com/736x/45/67/89/enel.jpg",
+    "video": "https://youtu.be/EnEl123456?si=MNO789",
+    "youtube": "https://www.youtube.com/watch?v=EnEl123456",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Antagonist",
+    "description": "自封天上神明，雷電在指尖舞動；唯有無聲之處才能逃過他的審判。"
+  },
+  {
+    "word": "Rob Lucci",
+    "zh": "羅布·路奇",
+    "image": "https://i.pinimg.com/736x/56/78/9a/lucci.jpg",
+    "video": "https://youtu.be/RoBlUcCi789?si=PQR567",
+    "youtube": "https://www.youtube.com/watch?v=RoBlUcCi789",
+    "rarity": "普通",
+    "category": "One Piece",
+    "role": "Antagonist",
+    "description": "CP9最強殺手，豹型格鬥如暗夜獵豹；一擊毀滅卻冷如冰霜。"
+  },
+  {
+    "word": "Kaido",
+    "zh": "凱多",
+    "image": "https://i.pinimg.com/736x/67/89/ab/kaido.jpg",
+    "video": "https://youtu.be/KaIdO98765?si=STU890",
+    "youtube": "https://www.youtube.com/watch?v=KaIdO98765",
+    "rarity": "超稀有",
+    "category": "One Piece",
+    "role": "Antagonist",
+    "description": "自稱『世界最強生物』，醉酒如猛獸，拳拳帶雷霆之力，船身皆碎屑。"
+  },
+  {
+    "word": "Charlotte Linlin",
+    "zh": "夏洛特·玲玲",
+    "image": "https://i.pinimg.com/736x/78/9a/bc/bigmom.jpg",
+    "video": "https://youtu.be/BigMoM12345?si=VWX123",
+    "youtube": "https://www.youtube.com/watch?v=BigMoM12345",
+    "rarity": "超稀有",
+    "category": "One Piece",
+    "role": "Antagonist",
+    "description": "掌管甜點與恐懼的女王，笑聲與飢餓並行，圓形臉蛋下是無盡飢渴。"
+  },
+  {
+    "word": "Sakazuki (Akainu)",
+    "zh": "赤犬·薩卡茲基",
+    "image": "https://i.pinimg.com/736x/89/ab/cd/akainu.jpg",
+    "video": "https://youtu.be/AkAiNu54321?si=YZA456",
+    "youtube": "https://www.youtube.com/watch?v=AkAiNu54321",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Antagonist",
+    "description": "絕對正義的化身，熔岩在血液中流動；腳下每一步都是炙熱判決。"
+  },
+  {
+    "word": "Borsalino (Kizaru)",
+    "zh": "黃猿·博爾薩利諾",
+    "image": "https://i.pinimg.com/736x/90/ab/cd/kizaru.jpg",
+    "video": "https://youtu.be/KiZaRu98765?si=BCD789",
+    "youtube": "https://www.youtube.com/watch?v=KiZaRu98765",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Antagonist",
+    "description": "光速行走如舞蹈，笑聲像星光閃爍；慢一拍就會被光芒吞噬。"
+  },
+  {
+    "word": "Bartholomew Kuma",
+    "zh": "巴索羅繆·熊",
+    "image": "https://i.pinimg.com/736x/01/23/45/kuma.jpg",
+    "video": "https://youtu.be/KuMa543210?si=EFG012",
+    "youtube": "https://www.youtube.com/watch?v=KuMa543210",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Antagonist",
+    "description": "可以瞬間推開一切痛苦，卻用沉默構築深邃；拳風輕拂卻撕裂靈魂。"
+  },
+{
+    "word": "Gomu Gomu no Mi",
+    "zh": "橡膠果實",
+    "image": "https://i.pinimg.com/736x/aa/bb/cc/gomugumonomi.jpg",
+    "video": "https://youtu.be/GmGuMu1234?si=XYZabc",
+    "youtube": "https://www.youtube.com/watch?v=GmGuMu1234",
+    "rarity": "超稀有",
+    "category": "One Piece",
+    "role": "Devil Fruit",
+    "description": "吃下就能伸長如橡皮筋，甩出一拳就像放大版彈簧，打人還能順便做瑜珈。"
+  },
+  {
+    "word": "Hito Hito no Mi",
+    "zh": "人人果實",
+    "image": "https://i.pinimg.com/736x/bb/cc/dd/hitohitonomi.jpg",
+    "video": "https://youtu.be/HiToHiTo123?si=DEFuvw",
+    "youtube": "https://www.youtube.com/watch?v=HiToHiTo123",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Devil Fruit",
+    "description": "動物界的超級變身藥，一口咬下從走獸秒變智商爆表人類；配方穩定送醫必備。"
+  },
+  {
+    "word": "Mera Mera no Mi",
+    "zh": "炎炎果實",
+    "image": "https://i.pinimg.com/736x/cc/dd/ee/merameranomi.jpg",
+    "video": "https://youtu.be/MeRaMeRa123?si=GHIjkl",
+    "youtube": "https://www.youtube.com/watch?v=MeRaMeRa123",
+    "rarity": "稀有",
+    "category": "One Piece",
+    "role": "Devil Fruit",
+    "description": "身體化為火焰，連打噴嚏都能爆出小火苗，看電影最好別坐過近。"
+  },
+  {
+    "word": "Gura Gura no Mi",
+    "zh": "震震果實",
+    "image": "https://i.pinimg.com/736x/dd/ee/ff/guraguranomi.jpg",
+    "video": "https://youtu.be/GuRaGuRa123?si=MNOpqr",
+    "youtube": "https://www.youtube.com/watch?v=GuRaGuRa123",
+    "rarity": "超稀有",
+    "category": "One Piece",
+    "role": "Devil Fruit",
+    "description": "一拳揮出就能掀起地動山搖，連隔壁房子的貓都能被嚇得打哈欠。"
+  },
+  {
+    "word": "Yami Yami no Mi",
+    "zh": "暗暗果實",
+    "image": "https://i.pinimg.com/736x/ee/ff/00/yamiyaminomi.jpg",
+    "video": "https://youtu.be/YaMiYaMi123?si=STUvwx",
+    "youtube": "https://www.youtube.com/watch?v=YaMiYaMi123",
+    "rarity": "超稀有",
+    "category": "One Piece",
+    "role": "Devil Fruit",
+    "description": "黑洞般吞噬一切力量，什麼都吸得入；想跟它做遊戲？先確定你能承受重力。"
+  },  
+// 未來都市類型 (共7張)
   { word: "neoncity", zh: "霓虹都市", image: "https://th.bing.com/th/id/OIP.ecqHXnof2qkj2k4HSZ_zVgHaE7?w=626&h=417&rs=1&pid=ImgDetMain", rarity: "稀有", category: "未來都市", description: "光影交織的街道，夢想與現實在霓虹中共舞。" },
   { word: "hovercar", zh: "懸浮車", image: "https://img.freepik.com/premium-photo/amazing-flying-car-combining-futuristic-technology_951992-2843.jpg", rarity: "稀有", category: "未來都市", description: "車輪消逝於街面，未來的律動在空中飛馳。" },
   { word: "cybertower", zh: "賽博塔", image: "https://img.freepik.com/premium-photo/a-futuristic-cityscape-illuminated-by-the-glow-of-computer-science-technology_349863-1434.jpg", rarity: "超稀有", category: "未來都市", description: "高聳入雲，霧化之光刷洗每層記憶。" },
@@ -2162,12 +2464,18 @@ category: "神話生物", description: "白蹄踏露，角尖閃耀純潔光芒�
   { word: "dronepolice", zh: "警用無人機", image: "https://th.bing.com/th/id/OIP.FEduWQQ7mvqjQTGuV-DOowAAAA?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2", rarity: "普通", category: "未來都市", description: "金屬翅膀巡弋，秩序的守護者從天而降。" },
   { word: "skybridge", zh: "空中廊橋", image: "https://image.archiposition.com/2022/07/71658314181.jpg", rarity: "稀有", category: "未來都市", description: "連結高樓的透明之路，踩夢踏歌而行。" },
   { word: "holomarket", zh: "全息市場", image: "https://thumbs.dreamstime.com/b/holographic-interface-displaying-blueprints-301152804.jpg", rarity: "普通", category: "未來都市", description: "數位擺攤，買賣停留於光與影的交界。" },
-  { word: "anglerfish", zh: "鮟鱇魚", image: "https://i.pinimg.com/736x/13/67/8f/13678fb8d82ff252a356308f90bc2db2.jpg", video: "https://youtu.be/iQ3JnFi53x0?si=3IX3mP_l-OE00lSa", rarity: "普通", category: "深海奇觀", description: "燈籠魚的本名是鮟鱇魚。這種魚的長度在80釐米左右，身體扁平，而且很柔軟。它的徒步很大，呈圓盤狀，尾巴則很細小，下頜吐出，兩頜上有大量尖銳的牙齒，鰓孔很大，體表沒有鱗片。由於它不常遊動，捕食機會少，所以需要用到頭頂的小燈籠來引誘獵物。" },
+ 
+
+ { word: "anglerfish", zh: "鮟鱇魚", image: "https://i.pinimg.com/736x/13/67/8f/13678fb8d82ff252a356308f90bc2db2.jpg", video: "https://youtu.be/iQ3JnFi53x0?si=3IX3mP_l-OE00lSa", rarity: "普通", category: "深海奇觀", description: "燈籠魚的本名是鮟鱇魚。這種魚的長度在80釐米左右，身體扁平，而且很柔軟。它的徒步很大，呈圓盤狀，尾巴則很細小，下頜吐出，兩頜上有大量尖銳的牙齒，鰓孔很大，體表沒有鱗片。由於它不常遊動，捕食機會少，所以需要用到頭頂的小燈籠來引誘獵物。" },
 
   { word: "vampiresquid", zh: "吸血烏賊", image: "https://www.mbari.org/wp-content/uploads/2020/06/Vampyroteuthis-infernalis_vamp-T1152-09_15_43_14-1030x579.jpg", video: "https://youtu.be/FEyfesjentE?si=wskJuIbiqdZCg5aj", rarity: "超稀有", category: "深海奇觀", description: "披著黑紅披風，游走於生與死的邊界之間。" },
 
   { word: "gulper eel", zh: "翻鬥鰻", image: "https://th.bing.com/th/id/OIP.Z7gkgO8GLrOpFgDBqXvGGQHaDv?w=650&h=329&rs=1&pid=ImgDetMain", video: "https://youtu.be/vYyizW-U1fQ?si=C8wFixE4b0yUdYbb", rarity: "稀有", category: "深海奇觀", description: "一口吞噬整片夜色，肚裡藏著無垠的深海夢魘。" },
-  { word: "oarfish", zh: "王帶魚", image: "https://coastalanglermag.com/wp-content/uploads/2019/12/oar-fish.jpg", video: "https://youtu.be/yK2g4Nwdxco?si=JhdfXY3_731ZCpWi", rarity: "超稀有", category: "深海奇觀", description: "長如銀絲的身軀，在深海中緩緩舞動，彷若古老的水晶旗幟。" },
+
+  
+  // ====== MP4 影片作為主要媒體的卡片範例 ======
+  // 這些卡片使用 MP4 檔案作為 image 屬性，直接顯示影片而不是圖片
+   { word: "oarfish", zh: "王帶魚", image: "https://coastalanglermag.com/wp-content/uploads/2019/12/oar-fish.jpg", video: "https://youtu.be/yK2g4Nwdxco?si=JhdfXY3_731ZCpWi", rarity: "超稀有", category: "深海奇觀", description: "長如銀絲的身軀，在深海中緩緩舞動，彷若古老的水晶旗幟。" },
   { word: "fangtooth", zh: "尖齒魚", image: "https://i.pinimg.com/originals/a6/cd/3f/a6cd3f0a9cc47b9794fa89633e4b119d.jpg", video: "https://www.youtube.com/watch?v=jCWop491Q9Y", rarity: "稀有", category: "深海奇觀", description: "比身軀更長的利牙，吞噬每一道入侵的陰影。" },
   { word: "barreleye", zh: "桶眼魚", image: "https://th.bing.com/th/id/R.c22825941a287453b48d50dc07dfc1d0?rik=seFt%2bWIurOD8XA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-GBe3T8Tl7OI%2fUn7fZPzqJ7I%2fAAAAAAAABL8%2fV6rHlHOKtFg%2fs1600%2fBarreleye.jpg&ehk=n9GJFy5emOZedWNHVXD3KHEXA8ufbLXUPxSQHWnqBJA%3d&risl=&pid=ImgRaw&r=0", video: "https://youtu.be/24sUoSHw4w0?si=lScAhAJLugaRvKE6", rarity: "稀有", category: "深海奇觀", description: "透明的頭蓋，映照著深海最隱秘的星辰" },
   { word: "tripod fish", zh: "三腳魚", image: "https://th.bing.com/th/id/OIP.66k0Y-Tym-KtNGf1zwp5fgAAAA?rs=1&pid=ImgDetMain", video: "https://youtu.be/ZjZFWxS1c-A?si=azLtpa9DJSI_h-Wt", rarity: "普通", category: "深海奇觀", description: "三隻纖細支腳，穩立於海床，靜候命運的浪潮。" },
@@ -2267,7 +2575,7 @@ description: "被封印的火焰惡魔，暖心又鬧騰，與霍爾共築漂浮
   { word: "Pan", zh: "潘神", image: "https://example.com/images/pan.png", rarity: "普通", category: "希臘神話", description: "牧神與山林守護者，笛聲迴盪野外。" },
   { word: "Nausicaä", zh: "娜烏西卡", image: "https://example.com/images/nausicaa_character.png", rarity: "超稀有", category: "宮崎駿", description: "風之谷的少女公主，擁有與自然溝通的能力。" },
   { word: "Sheeta", zh: "希達", image: "https://example.com/images/sheeta.png", rarity: "稀有", category: "宮崎駿", description: "天空之城的神秘公主，承載古代文明的秘密。" },
-  { word: "Mei Kusakabe", zh: "草壁梅", image: "https://example.com/images/mei.png", rarity: "普通", category: "宮崎駿", description: "龍貓中的活潑小女孩，好奇心驅使她探索森林。" },
+  { word: "Mei Kusakabe", zh: "草壁梅", image: "https://i.pinimg.com/736x/8b/00/91/8b00917830b11e63c6ee0a76fc6b2230.jpg", rarity: "普通", category: "宮崎駿", description: "龍貓中的活潑小女孩，好奇心驅使她探索森林。" },
   { word: "Kiki", zh: "奇奇", image: "https://example.com/images/kiki_character.png", rarity: "稀有", category: "宮崎駿", description: "魔女宅急便的年輕魔女，以飛行麂皮掃帚送達夢想。" },
   { word: "Porco Rosso", zh: "紅豬", image: "https://example.com/images/porco_character.png", rarity: "超稀有", category: "宮崎駿", description: "紅豬中的飛行王牌，豬鼻下的英雄靈魂。" },
   { word: "Shoukichi", zh: "小吉", image: "https://example.com/images/shoukichi.png", rarity: "普通", category: "宮崎駿", description: "平成狸合戰的年輕狸貓，帶領夥伴對抗人類侵擾。" },
