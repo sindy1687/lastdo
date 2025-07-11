@@ -165,7 +165,7 @@ const baseCards = [
   {
     "word": "Jigglypuff",
     "zh": "胖丁",
-    "image": "https://fanart.fanabyss.com/499/Jigglypuff-106.png",
+    "image": "https://i.pinimg.com/736x/ca/ee/bc/caeebcac9a3780a68927b0d34677a9b1.jpg",
     "video": "https://youtu.be/--lrn-klYzY?si=qv_Wt0BcJBiXSoyS",
     "rarity": "普通",
     "category": "寶可夢",
@@ -221,7 +221,7 @@ const baseCards = [
   {
     "word": "Lucario",
     "zh": "路卡利歐",
-    "image": "https://tse4.mm.bing.net/th/id/OIP.ENJ25G4c52L_AgbJSTm14gHaJ4?r=0&cb=thvnext&w=774&h=1032&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://i.pinimg.com/736x/b8/38/71/b83871d583a2e5d1fa23d8f3f616eafb.jpg",
     "video": "https://youtu.be/69D0sa09LLU?si=ZBpEIikMzyt95RBA",
     "rarity": "稀有",
     "category": "寶可夢",
@@ -250,7 +250,7 @@ const baseCards = [
    {
     "word": "Yuji Itadori",
     "zh": "虎杖悠仁",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.njZQzrCZP-rPRuPLn3cQ-gHaLH?r=0&cb=thvnext&w=1080&h=1620&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://v1.pinimg.com/videos/mc/720p/16/2c/a9/162ca90b67219a8cb1a01c28c112bc42.mp4",
     "video": "https://youtu.be/vvtIX9fPwsk?si=u-FRDBLEWgCqrqMK",
     "rarity": "稀有",
     "category": "咒術迴戰",
@@ -362,7 +362,7 @@ const baseCards = [
   {
     "word": "Panda",
     "zh": "熊貓",
-    "image": "https://www.hlj.com/productimages/mov/mov61916_0.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/e5/e4/32/e5e432de46870b80e787fd22933421d2.mp4",
     "video": "https://youtu.be/FmxmQEaHxyE?si=rU2M7yZtBC1I4fVs",
     "rarity": "普通",
     "category": "咒術迴戰",
@@ -432,7 +432,7 @@ const baseCards = [
   {
     "word": "Leorio Paradinight",
     "zh": "雷歐力",
-    "image": "https://lh3.googleusercontent.com/mmq-nTs56oVT21h6T8VaOPF_sy53dhLuGVzJOYomS9t6pQP5-d-dvcYja3uBcphVtegYwhfsLPLyYmXnGpnsymHnihNGw6krs3lQrIx0HK_DcQ=w400-s0",
+    "image": "https://i.pinimg.com/736x/a3/3e/d1/a33ed1585696a581e47f2fd383c28e6a.jpg",
     "video": "https://youtu.be/dkVlX4oXBuA?si=sIK6hBzt4w8quXuq",
     "rarity": "普通",
     "category": "獵人",
@@ -460,7 +460,7 @@ const baseCards = [
   {
     "word": "Isaac Netero",
     "zh": "尼特羅",
-    "image": "https://wallpapercave.com/wp/wp12542469.jpg",
+    "image": "https://i.pinimg.com/736x/17/d3/5a/17d35a6eb68f409a036c5ce01b698dfd.jpg",
     "video": "https://youtu.be/wk961M-EoRk?si=n_1pdGAj-aDyjVnC",
     "rarity": "稀有",
     "category": "獵人",
@@ -474,7 +474,7 @@ const baseCards = [
   {
     "word": "Meruem",
     "zh": "梅路艾姆",
-    "image": "https://i.ytimg.com/vi/Ce7KBNMNqpk/maxresdefault.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/c9/15/6c/c9156cccc9b0f2d1c77c1aca38b6cb93.mp4",
     "video": "https://youtu.be/9jiqcnwrsuk?si=GdR7ER1pRSKKE52O",
     "rarity": "稀有",
     "category": "獵人",
@@ -488,7 +488,7 @@ const baseCards = [
   {
     "word": "Neferpitou",
     "zh": "貓女比特",
-    "image": "https://tse2.mm.bing.net/th/id/OIP.i42sci52rbmoQYAyNTXRoQAAAA?r=0&cb=thvnext&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://v1.pinimg.com/videos/mc/720p/f7/a0/3e/f7a03e89cc1a286484cdb48ab78eeb12.mp4",
     "video": "https://youtu.be/EFOjQ4bBbKQ?si=6DS2voxcUzRwf7Z4",
     "rarity": "稀有",
     "category": "獵人",
@@ -502,7 +502,7 @@ const baseCards = [
   {
     "word": "Shaiapouf",
     "zh": "夏伊亞普夫",
-    "image": "https://i.pinimg.com/736x/a2/a8/0b/a2a80b5cf09c322701255472c1e4ee0a.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/23/20/fc/2320fc318cc7f0960291af38c57e58d4.mp4",
     "video": "https://youtu.be/EXAMPLE_POUF",
     "rarity": "普通",
     "category": "獵人",
@@ -516,7 +516,7 @@ const baseCards = [
   {
     "word": "Knuckle Bine",
     "zh": "納克爾",
-    "image": "https://cdn.myanimelist.net/images/characters/2/572045.jpg",
+    "image": "https://i.pinimg.com/736x/4f/8c/bf/4f8cbfaf27543e6acdebbf907a46a844.jpg",
     "video": "https://youtu.be/EXAMPLE_KNUCKLE",
     "rarity": "普通",
     "category": "獵人",
@@ -530,8 +530,7 @@ const baseCards = [
   {
     "word": "Biscuit Krueger",
     "zh": "比司吉",
-    "image": "https://go_service.aieasypic.com/?url=https:%2F%2Fimage.civitai.com%2FxG1nkqKTMzGDvpLrqFT7WA%2F0bbc4c02-d479-4f7f-b984-f187a6ada1bb%2Fwidth%3D600%2F1004049.jpeg&type=jpeg&width=512&quality=80",
-    "video": "https://youtu.be/EXAMPLE_BISKY",
+    "image": "https://i.pinimg.com/736x/ed/03/12/ed03120a6571e51856b9e2b4aef70e0a.jpg",
     "rarity": "稀有",
     "category": "獵人",
     "description": "外表是小女孩，實際是肌肉爆棚的資深高手。",
@@ -545,7 +544,7 @@ const baseCards = [
   {
     "word": "Red Blood Cell",
     "zh": "紅血球",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.O8X88pWM4-mog43Y0iYzCQHaEK?r=0&w=1366&h=768&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://i.pinimg.com/736x/f0/d3/57/f0d357cf7903ac9382de52ef23102907.jpg",
     "video": "https://youtu.be/Onm6pGz2_bg?si=gX5LEfFgMpt2zQkl",
     "rarity": "普通",
     "category": "工作細胞",
@@ -559,7 +558,7 @@ const baseCards = [
   {
     "word": "White Blood Cell",
     "zh": "白血球",
-    "image": "https://n.sinaimg.cn/sinacn22/212/w2048h3764/20180811/5396-hhqtaww9980903.jpg",
+    "image": "https://i.pinimg.com/736x/67/d5/86/67d586ff2dba0887281d9d713d33ccd9.jpg",
     "video": "https://youtu.be/-mxIf7hQ5aA?si=Qr9qmfE8BO1RnEm1",
     "rarity": "普通",
     "category": "工作細胞",
@@ -573,7 +572,7 @@ const baseCards = [
   {
     "word": "Platelet",
     "zh": "血小板",
-    "image": "https://th.bing.com/th/id/R.31792651328069b769768351ce054b42?rik=ROc3PjaQiMgxHg&pid=ImgRaw&r=0",
+    "image": "https://i.pinimg.com/736x/1c/35/14/1c3514d80ae577782f12077f86faf042.jpg",
     "video": "https://youtu.be/-mxIf7hQ5aA?si=u6WT8HUiiMBRuFg3",
     "rarity": "超稀有",
     "category": "工作細胞",
@@ -587,7 +586,7 @@ const baseCards = [
   {
     "word": "Killer T Cell",
     "zh": "殺手T細胞",
-    "image": "https://www.1999.co.jp/itbig66/10669341a5.jpg",
+    "image": "https://i.pinimg.com/736x/ae/1b/55/ae1b55cd301a641f8cd6636599207101.jpg",
     "video": "https://youtu.be/Hb2foEvXfMI?si=j7FFTey52kX4AP4l",
     "rarity": "稀有",
     "category": "工作細胞",
@@ -601,8 +600,7 @@ const baseCards = [
   {
     "word": "Macrophage",
     "zh": "巨噬細胞",
-    "image": "https://tse4.mm.bing.net/th/id/OIP.rnxEGzSVxzo4zAFbJ0YG1AHaKH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    "video": "https://youtu.be/NelZa-fJF7o?si=HKleqgdjE50I1vI2",
+    "image": "https://i.pinimg.com/736x/30/fa/77/30fa779113bd7ef27eae976538549ed9.jpg",
     "rarity": "超稀有",
     "category": "工作細胞",
     "description": "穿著洋裝優雅地用菜刀解決入侵者。",
@@ -615,7 +613,7 @@ const baseCards = [
   {
     "word": "Memory Cell",
     "zh": "記憶細胞",
-    "image": "https://tse1.explicit.bing.net/th/id/OIP.MGRvGdZaJuTJ8jl1O5NRigHaHZ?r=0&w=1024&h=1022&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://i.pinimg.com/736x/26/37/5d/26375d671c81259426adcc78d7d27538.jpg",
     "video": "https://youtu.be/EXAMPLE_MEMORY",
     "rarity": "稀有",
     "category": "工作細胞",
@@ -629,7 +627,7 @@ const baseCards = [
   {
     "word": "Helper T Cell",
     "zh": "輔助性T細胞",
-    "image": "https://tse2.mm.bing.net/th/id/OIP.rg0TVxgnIfk6dtwIney9iAAAAA?r=0&w=320&h=512&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://i.pinimg.com/originals/fc/86/e3/fc86e30ff493e4a57b681be2e2958f9d.gif",
     "video": "https://youtu.be/EXAMPLE_HELPERT",
     "rarity": "稀有",
     "category": "工作細胞",
@@ -643,7 +641,7 @@ const baseCards = [
   {
     "word": "Regulatory T Cell",
     "zh": "調節性T細胞",
-    "image": "https://i.pinimg.com/736x/40/4e/fe/404efe76d30b66a099844682c92f0df7.jpg",
+    "image": "https://i.pinimg.com/736x/04/f1/a1/04f1a11f6e6d96b02397dcf27eae9112.jpg",
     "video": "https://youtu.be/EXAMPLE_REGULATORY",
     "rarity": "普通",
     "category": "工作細胞",
@@ -657,7 +655,7 @@ const baseCards = [
   {
     "word": "Dendritic Cell",
     "zh": "樹突細胞",
-    "image": "https://i.ytimg.com/vi/-Uewq8LHNYU/maxresdefault.jpg",
+    "image": "https://i.pinimg.com/736x/67/c7/c3/67c7c35887f673f4d6f10c679f06f888.jpg",
     "video": "https://youtu.be/Hb2foEvXfMI?si=aJVgBPQxSBuwfCEm",
     "rarity": "普通",
     "category": "工作細胞",
@@ -671,7 +669,7 @@ const baseCards = [
   {
     "word": "B Cell",
     "zh": "B細胞",
-    "image": "https://i.pinimg.com/736x/7d/b8/ef/7db8efe6d504a90afbc9db7e9816b696.jpg",
+    "image": "https://i.pinimg.com/736x/ba/f3/44/baf3444793d912d80583650d1be2ec1d.jpg",
     "video": "https://youtu.be/EXAMPLE_BCELL",
     "rarity": "普通",
     "category": "工作細胞",
@@ -685,7 +683,7 @@ const baseCards = [
   {
     "word": "NK Cell",
     "zh": "自然殺手細胞",
-    "image": "https://cdn.myanimelist.net/images/characters/12/362907.jpg",
+    "image": "https://i.pinimg.com/736x/3b/15/23/3b1523110265fb5f1d6c373c803ed63a.jpg",
     "video": "https://youtu.be/EXAMPLE_NKCELL",
     "rarity": "稀有",
     "category": "工作細胞",
@@ -741,8 +739,7 @@ const baseCards = [
   {
     "word": "Cancer Cell",
     "zh": "癌細胞",
-    "image": "https://tse3.mm.bing.net/th/id/OIP.EU5yZ5dhE8tq2gE7mnEKFgHaEL?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    "video": "https://youtu.be/gqau5DpIdBc?si=Dul_HXfESuFA0zSu",
+    "image": "https://i.pinimg.com/736x/9c/ba/7a/9cba7ada54c19bd29e002a34d693fce6.jpg",
     "rarity": "超稀有",
     "category": "工作細胞",
     "description": "痛苦與復仇心所化身的變異細胞。",
@@ -755,7 +752,7 @@ const baseCards = [
      {
     "word": "Chrollo Lucilfer",
     "zh": "庫洛洛",
-    "image": "https://wallpapers.com/images/hd/chrollo-lucilfer-xtfkqnn9ptgt91p2.jpg",
+    "image": "https://i.pinimg.com/736x/fb/36/d8/fb36d8d1648a91638c115c256febcfbf.jpg",
     "video": "https://youtu.be/EXAMPLE_CHROLLO",
     "rarity": "稀有",
     "category": "獵人",
@@ -797,7 +794,7 @@ const baseCards = [
   {
     "word": "Inside Out",
     "zh": "腦筋急轉彎",
-    "image": "https://example.com/inside_out.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/df/50/83/df5083079d1c86388fdcc416c4ff449e.mp4",
     "video": "https://youtu.be/EXAMPLE_INSIDEOUT",
     "rarity": "稀有",
     "category": "皮克斯宇宙",
@@ -811,7 +808,7 @@ const baseCards = [
   {
     "word": "Up",
     "zh": "天外奇蹟",
-    "image": "https://example.com/up.jpg",
+    "image": "https://i.pinimg.com/736x/1f/fb/50/1ffb504aa538fb231267217e649d2c13.jpg",
     "video": "https://youtu.be/EXAMPLE_UP",
     "rarity": "稀有",
     "category": "皮克斯宇宙",
@@ -825,7 +822,7 @@ const baseCards = [
   {
     "word": "Ratatouille",
     "zh": "料理鼠王",
-    "image": "https://example.com/ratatouille.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/9e/ec/17/9eec17efe03e28198435cdfe582cd70f.mp4",
     "video": "https://youtu.be/EXAMPLE_RAT",
     "rarity": "普通",
     "category": "皮克斯宇宙",
@@ -839,7 +836,7 @@ const baseCards = [
 {
     "word": "Jaguar",
     "zh": "美洲豹",
-    "image": "https://example.com/jaguar.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/e6/9a/ba/e69abaded1624315ae5c3594bf31b1db.mp4",
     "video": "https://youtu.be/EXAMPLE_JAGUAR",
     "rarity": "稀有",
     "category": "亞馬遜雨林",
@@ -853,7 +850,7 @@ const baseCards = [
   {
     "word": "Capybara",
     "zh": "水豚",
-    "image": "https://example.com/capybara.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/9d/fd/c9/9dfdc9ca41869c8ec7911d7ed8780cad.mp4",
     "video": "https://youtu.be/EXAMPLE_CAPYBARA",
     "rarity": "普通",
     "category": "亞馬遜雨林",
@@ -867,7 +864,7 @@ const baseCards = [
    {
     "word": "Tamandua",
     "zh": "小食蟻獸",
-    "image": "https://example.com/tamandua.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/f2/50/95/f2509582e9bbab176b3dc84e4cacfdc9.mp4",
     "video": "https://youtu.be/EXAMPLE_TAMANDUA",
     "rarity": "普通",
     "category": "亞馬遜雨林",
@@ -881,7 +878,7 @@ const baseCards = [
   {
     "word": "Howler Monkey",
     "zh": "吼猴",
-    "image": "https://example.com/howlermonkey.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/13/58/65/1358653ad1beee3d44758301f08fbbc1_720w.mp4",
     "video": "https://youtu.be/EXAMPLE_HOWLER",
     "rarity": "普通",
     "category": "亞馬遜雨林",
@@ -895,7 +892,7 @@ const baseCards = [
   {
     "word": "Red Uakari",
     "zh": "紅臉僧面猴",
-    "image": "https://example.com/uakari.jpg",
+    "image": "https://i.pinimg.com/736x/5f/59/26/5f59267426379aa652d197cc1dc3029f.jpg",
     "video": "https://youtu.be/EXAMPLE_UAKARI",
     "rarity": "普通",
     "category": "亞馬遜雨林",
@@ -909,7 +906,7 @@ const baseCards = [
   {
     "word": "Caiman",
     "zh": "凱門鱷",
-    "image": "https://example.com/caiman.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/a8/e1/b2/a8e1b28f8aa3a1d80b34209165fa1291.mp4",
     "video": "https://youtu.be/EXAMPLE_CAIMAN",
     "rarity": "稀有",
     "category": "亞馬遜雨林",
@@ -923,7 +920,7 @@ const baseCards = [
   {
     "word": "Macaw",
     "zh": "金剛鸚鵡",
-    "image": "https://example.com/macaw.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/ec/15/a3/ec15a3fee5376821f1a9f84b9c2421df.mp4",
     "video": "https://youtu.be/EXAMPLE_MACAW",
     "rarity": "普通",
     "category": "亞馬遜雨林",
@@ -951,7 +948,7 @@ const baseCards = [
   {
     "word": "Harpy Eagle",
     "zh": "角雕",
-    "image": "https://example.com/harpyeagle.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/b5/20/32/b5203298ecd3af6dffee02343004e181_720w.mp4",
     "video": "https://youtu.be/EXAMPLE_HARPY",
     "rarity": "稀有",
     "category": "亞馬遜雨林",
@@ -965,7 +962,7 @@ const baseCards = [
   {
     "word": "Sloth",
     "zh": "樹懶",
-    "image": "https://example.com/sloth.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/ca/17/20/ca17202606d596cc958904b6272341f0_540w.mp4",
     "video": "https://youtu.be/EXAMPLE_SLOTH",
     "rarity": "普通",
     "category": "亞馬遜雨林",
@@ -979,7 +976,7 @@ const baseCards = [
   {
     "word": "Leafcutter Ant",
     "zh": "切葉蟻",
-    "image": "https://example.com/leafcutterant.jpg",
+    "image": "https://i.pinimg.com/736x/75/3f/da/753fda8fc197cbafedbd7c063ba827b3.jpg",
     "video": "https://youtu.be/EXAMPLE_LEAFCUT",
     "rarity": "普通",
     "category": "亞馬遜雨林",
@@ -993,7 +990,7 @@ const baseCards = [
 {
     "word": "Polar Bear",
     "zh": "北極熊",
-    "image": "https://example.com/polarbear.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/e4/a5/7b/e4a57bd0c5b42132e96248180f564854_720w.mp4",
     "video": "https://youtu.be/EXAMPLE_POLARBEAR",
     "rarity": "超稀有",
     "category": "冰原動物",
@@ -1007,7 +1004,7 @@ const baseCards = [
   {
     "word": "Snowy Owl",
     "zh": "雪鴞",
-    "image": "https://example.com/snowyowl.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/70/ce/16/70ce162a49f1cdfac2f1ad6a10d70508_720w.mp4",
     "video": "https://youtu.be/EXAMPLE_SNOWYOWL",
     "rarity": "普通",
     "category": "冰原動物",
@@ -1021,7 +1018,7 @@ const baseCards = [
   {
     "word": "Fennec Fox",
     "zh": "耳廓狐",
-    "image": "https://example.com/fennecfox.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/17/32/c5/1732c57059073004b693886d6ea2cc7b_540w.mp4",
     "video": "https://youtu.be/EXAMPLE_FENNECFOX",
     "rarity": "稀有",
     "category": "炎熱生物",
@@ -1035,7 +1032,7 @@ const baseCards = [
   {
     "word": "Camel",
     "zh": "駱駝",
-    "image": "https://example.com/camel.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/c8/7d/07/c87d07bf7f7b3f7de82c164799f2e488.mp4",
     "video": "https://youtu.be/EXAMPLE_CAMEL",
     "rarity": "普通",
     "category": "炎熱生物",
@@ -1049,7 +1046,7 @@ const baseCards = [
   {
     "word": "Thorny Devil",
     "zh": "刺魔蜥蜴",
-    "image": "https://example.com/thornydevil.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/2e/a3/c3/2ea3c35d79b82fde1bd187b978c0a9c6_720w.mp4",
     "video": "https://youtu.be/EXAMPLE_THORNY",
     "rarity": "普通",
     "category": "炎熱生物",
@@ -1063,7 +1060,7 @@ const baseCards = [
   {
     "word": "Sidewinder",
     "zh": "角響尾蛇",
-    "image": "https://example.com/sidewinder.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/80/c5/9d/80c59d75f067aad7361504813cff1aab.mp4",
     "video": "https://youtu.be/EXAMPLE_SIDEWINDER",
     "rarity": "普通",
     "category": "炎熱生物",
@@ -1091,7 +1088,7 @@ const baseCards = [
   {
     "word": "Gila Monster",
     "zh": "吉拉毒蜥",
-    "image": "https://example.com/gilamonster.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/c8/09/2c/c8092c85fd64f69dea862575b869d200.mp4",
     "video": "https://youtu.be/EXAMPLE_GILA",
     "rarity": "超稀有",
     "category": "炎熱生物",
@@ -1105,7 +1102,7 @@ const baseCards = [
   {
     "word": "Secretary Bird",
     "zh": "秘書鳥",
-    "image": "https://example.com/secretarybird.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/6c/85/62/6c85628d4b0c94c586d44ec154cbeb58_720w.mp4",
     "video": "https://youtu.be/EXAMPLE_SECRETARY",
     "rarity": "普通",
     "category": "炎熱生物",
@@ -1119,7 +1116,7 @@ const baseCards = [
   {
     "word": "Monitor Lizard",
     "zh": "巨蜥",
-    "image": "https://example.com/monitorlizard.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/3b/31/23/3b31234018d4ea9df9644f83d97713cd.mp4",
     "video": "https://youtu.be/EXAMPLE_MONITOR",
     "rarity": "稀有",
     "category": "炎熱生物",
@@ -1133,7 +1130,7 @@ const baseCards = [
   {
     "word": "Scarab Beetle",
     "zh": "聖甲蟲",
-    "image": "https://example.com/scarab.jpg",
+    "image": "https://i.pinimg.com/736x/88/b5/2d/88b52d1815b0e6dad4e83bab46e3a31c.jpg",
     "video": "https://youtu.be/EXAMPLE_SCARAB",
     "rarity": "普通",
     "category": "炎熱生物",
@@ -1147,7 +1144,7 @@ const baseCards = [
   {
     "word": "Caracal",
     "zh": "沙漠猞猁",
-    "image": "https://example.com/caracal.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/39/42/3e/39423eb89ee1bcaf714897b34ee43d52.mp4",
     "video": "https://youtu.be/EXAMPLE_CARACAL",
     "rarity": "超稀有",
     "category": "炎熱生物",
@@ -1161,7 +1158,7 @@ const baseCards = [
   {
     "word": "Dung Beetle",
     "zh": "糞金龜",
-    "image": "https://example.com/dungbeetle.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/c7/7f/42/c77f42f9886aade7579d9fd56ccc04a0.mp4",
     "video": "https://youtu.be/EXAMPLE_DUNG",
     "rarity": "稀有",
     "category": "炎熱生物",
@@ -1175,7 +1172,7 @@ const baseCards = [
   {
     "word": "Arctic Fox",
     "zh": "北極狐",
-    "image": "https://example.com/arcticfox.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/da/4d/7b/da4d7b813591b58ba003543b693b88af_720w.mp4",
     "video": "https://youtu.be/EXAMPLE_ARCTICFOX",
     "rarity": "超稀有",
     "category": "冰原動物",
@@ -1189,7 +1186,7 @@ const baseCards = [
   {
     "word": "Musk Ox",
     "zh": "麝香牛",
-    "image": "https://example.com/muskox.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/47/d8/c9/47d8c96d3a6f1700e115d6fbaf1509f5_720w.mp4",
     "video": "https://youtu.be/EXAMPLE_MUSKOX",
     "rarity": "普通",
     "category": "冰原動物",
@@ -1203,7 +1200,7 @@ const baseCards = [
   {
     "word": "Arctic Wolf",
     "zh": "北極狼",
-    "image": "https://example.com/arcticwolf.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/b4/a8/11/b4a8112e9d5e292256c67b787ccb55bb_720w.mp4",
     "video": "https://youtu.be/EXAMPLE_WOLF",
     "rarity": "超稀有",
     "category": "冰原動物",
@@ -1217,7 +1214,7 @@ const baseCards = [
   {
     "word": "Walrus",
     "zh": "海象",
-    "image": "https://example.com/walrus.jpg",
+    "image": "https://i.pinimg.com/736x/03/0e/3a/030e3a6241ef2e1aea47f8196117581d.jpg",
     "video": "https://youtu.be/EXAMPLE_WALRUS",
     "rarity": "稀有",
     "category": "冰原動物",
@@ -1231,7 +1228,7 @@ const baseCards = [
   {
     "word": "Snowshoe Hare",
     "zh": "雪兔",
-    "image": "https://example.com/snowshoehare.jpg",
+    "image": "https://i.pinimg.com/736x/e7/80/a7/e780a770f3b90b6596231f0a7cbbd3dc.jpg",
     "video": "https://youtu.be/EXAMPLE_HARE",
     "rarity": "稀有",
     "category": "冰原動物",
@@ -1245,7 +1242,7 @@ const baseCards = [
   {
     "word": "Ermine",
     "zh": "白鼬",
-    "image": "https://example.com/ermine.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/54/33/0e/54330e24ad591df07b69d8cdf10c0d3b.mp4",
     "video": "https://youtu.be/EXAMPLE_ERMINE",
     "rarity": "稀有",
     "category": "冰原動物",
@@ -1259,7 +1256,7 @@ const baseCards = [
   {
     "word": "Snow Leopard",
     "zh": "雪豹",
-    "image": "https://example.com/snowleopard.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/d2/ea/98/d2ea982b0a89dda3bd566b38a2bb800b_720w.mp4",
     "video": "https://youtu.be/EXAMPLE_LEOPARD",
     "rarity": "超稀有",
     "category": "冰原動物",
@@ -1273,7 +1270,7 @@ const baseCards = [
   {
     "word": "Frost Lizard",
     "zh": "冰封蜥蜴",
-    "image": "https://example.com/frostlizard.jpg",
+    "image": "https://i.pinimg.com/736x/dc/c3/10/dcc3102060385088492f886d6ba22884.jpg",
     "video": "https://youtu.be/EXAMPLE_LIZARD",
     "rarity": "普通",
     "category": "冰原動物",
@@ -1287,7 +1284,7 @@ const baseCards = [
 {
     "word": "King Penguin",
     "zh": "國王企鵝",
-    "image": "https://example.com/kingpenguin.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/a7/b5/bd/a7b5bdb58bea9b3d65cf07e643a812d1.mp4",
     "video": "https://youtu.be/EXAMPLE_KINGPENGUIN",
     "rarity": "超稀有",
     "category": "冰原動物",
@@ -1301,7 +1298,7 @@ const baseCards = [
   {
     "word": "Ivory Gull",
     "zh": "象牙鷗",
-    "image": "https://example.com/ivorygull.jpg",
+    "image": "https://i.pinimg.com/736x/b1/15/9b/b1159b2cc788cf3c8fa52d63b5e31f31.jpg",
     "video": "https://youtu.be/EXAMPLE_GULL",
     "rarity": "普通",
     "category": "冰原動物",
@@ -1315,7 +1312,7 @@ const baseCards = [
   {
     "word": "Monsters, Inc.",
     "zh": "怪獸電力公司",
-    "image": "https://example.com/monsters_inc.jpg",
+    "image": "https://i.pinimg.com/736x/12/ea/c8/12eac80489a28491f7ec97f8f3e22a91.jpg",
     "video": "https://youtu.be/EXAMPLE_MONSTERS",
     "rarity": "普通",
     "category": "皮克斯宇宙",
@@ -1329,7 +1326,7 @@ const baseCards = [
    {
     "word": "Suguru Geto",
     "zh": "夏油傑",
-    "image": "https://example.com/geto.gif",
+    "image": "https://v1.pinimg.com/videos/mc/720p/38/2c/5e/382c5e0880732e58c06b77e62a4a7f59.mp4",
     "video": "https://youtu.be/EXAMPLE_GETO",
     "rarity": "稀有",
     "category": "咒術迴戰",
@@ -1343,7 +1340,7 @@ const baseCards = [
   {
     "word": "Choso",
     "zh": "脹相",
-    "image": "https://i.pinimg.com/736x/0d/42/5f/0d425fdfd562a59edd9c987c0a3bc1a8.jpg",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/61/2d/c8/612dc8ce8c6d4f40ab242d320b263dc3_720w.mp4",
     "video": "https://youtu.be/EXAMPLE_CHOSO",
     "rarity": "稀有",
     "category": "咒術迴戰",
@@ -1358,7 +1355,7 @@ const baseCards = [
     {
     "word": "Dragonite",
     "zh": "快龍",
-    "image": "https://example.com/dragonite.gif",
+    "image": "https://v1.pinimg.com/videos/mc/720p/f2/1e/67/f21e675044f57d19e91c6b24a0ed4673.mp4",
     "video": "https://youtu.be/EXAMPLE_DRAGONITE",
     "rarity": "稀有",
     "category": "寶可夢",
@@ -1372,7 +1369,7 @@ const baseCards = [
   {
     "word": "Mewtwo",
     "zh": "超夢",
-    "image": "https://example.com/mewtwo.gif",
+    "image": "https://v1.pinimg.com/videos/mc/720p/76/a9/27/76a9278bec89a8d1206ff19379e4a85c.mp4",
     "video": "https://youtu.be/EXAMPLE_MEWTWO",
     "rarity": "稀有",
     "category": "寶可夢",
@@ -1400,7 +1397,7 @@ const baseCards = [
   {
     "word": "Naruto Uzumaki",
     "zh": "漩渦鳴人",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.hcdXf15h3pDJafxYqGbxCAHaJQ?r=0&w=474&h=474&c=7",
+    "image": "https://v1.pinimg.com/videos/mc/720p/c0/87/a2/c087a28974b83da4f041d861dd322b86.mp4",
     "video": "https://youtu.be/yeUpnIKt6k4",
     "rarity": "超稀有",
     "category": "火影忍者",
@@ -1414,7 +1411,7 @@ const baseCards = [
   {
     "word": "Sasuke Uchiha",
     "zh": "宇智波佐助",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.G-EYV4-NlH6Nvzj4UfpP8QHaJ4?w=640&h=853&rs=1&pid=ImgDetMain",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/4f/74/81/4f74811e642ce16bd6822b71553689be_720w.mp4",
     "video": "https://youtu.be/HQzt4d3ALjA",
     "rarity": "超稀有",
     "category": "火影忍者",
@@ -1428,7 +1425,7 @@ const baseCards = [
   {
     "word": "Sakura Haruno",
     "zh": "春野櫻",
-    "image": "https://tse3.mm.bing.net/th/id/OIP.0RI9qx2aMOBi7Acv5HFKXwHaJ4?w=640&h=853&rs=1&pid=ImgDetMain",
+    "image": "https://v1.pinimg.com/videos/iht/720p/20/d9/b0/20d9b0addc134925ba71a59bbd2e7815.mp4",
     "video": "https://youtu.be/EtfTHD8T4lw",
     "rarity": "稀有",
     "category": "火影忍者",
@@ -1442,7 +1439,7 @@ const baseCards = [
   {
     "word": "Kakashi Hatake",
     "zh": "旗木卡卡西",
-    "image": "https://tse3.mm.bing.net/th/id/OIP.pZPxejZDMUNzLgFGXKwPvwHaKX?w=640&h=904&rs=1&pid=ImgDetMain",
+    "image": "https://v1.pinimg.com/videos/mc/720p/1a/9b/19/1a9b196fb1127af947c0602d38225fe4.mp4",
     "video": "https://youtu.be/vHQf2jLU1Fg",
     "rarity": "稀有",
     "category": "火影忍者",
@@ -1456,7 +1453,7 @@ const baseCards = [
   {
     "word": "Itachi Uchiha",
     "zh": "宇智波鼬",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.7Z5mT4HBBXRqRPpCFLYJ3wHaJl?w=640&h=853&rs=1&pid=ImgDetMain",
+    "image": "https://v1.pinimg.com/videos/mc/720p/58/8b/76/588b76cd43b6c92a1b854e6494220fd8.mp4",
     "video": "https://youtu.be/q5k4QZYVWGo",
     "rarity": "普通",
     "category": "火影忍者",
@@ -1470,7 +1467,7 @@ const baseCards = [
   {
     "word": "Shikamaru Nara",
     "zh": "奈良鹿丸",
-    "image": "https://tse3.mm.bing.net/th/id/OIP.ZtGzOf3keRzWzzTNe0O_PgHaLH?w=640&h=960&rs=1&pid=ImgDetMain",
+    "image": "https://i.pinimg.com/736x/fb/4a/04/fb4a044f8977b67d1574363a3868ca5f.jpg",
     "video": "https://youtu.be/ql-8i9OAjbM",
     "rarity": "稀有",
     "category": "火影忍者",
@@ -1484,7 +1481,7 @@ const baseCards = [
   {
     "word": "Rock Lee",
     "zh": "洛克・李",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.d5Jik_1L0hZJtA0epd4y6QHaKX?w=640&h=904&rs=1&pid=ImgDetMain",
+    "image": "https://i.pinimg.com/736x/2b/8e/dd/2b8edd1030acc9051cacb9f63faf1c26.jpg",
     "video": "https://youtu.be/p_GWxHICjM8",
     "rarity": "普通",
     "category": "火影忍者",
@@ -1498,7 +1495,7 @@ const baseCards = [
   {
     "word": "Hinata Hyuga",
     "zh": "日向雛田",
-    "image": "https://tse3.mm.bing.net/th/id/OIP.V5IJ6VNEuiTjeVpKkD55IQHaJQ?w=640&h=853&rs=1&pid=ImgDetMain",
+    "image": "https://i.pinimg.com/736x/37/2f/8b/372f8b0d611cae4924b5e94585572702.jpg",
     "video": "https://youtu.be/_u26A4WJgIQ",
     "rarity": "普通",
     "category": "火影忍者",
@@ -1512,7 +1509,7 @@ const baseCards = [
   {
     "word": "Gaara",
     "zh": "我愛羅",
-    "image": "https://i.pinimg.com/736x/71/c1/53/71c15395e7a6af19e6ee85c036bbb383.jpg",
+    "image": "https://i.pinimg.com/736x/0d/29/16/0d29169853e8b3972a01ad1fb11e7696.jpg",
     "video": "https://youtu.be/0b7cAEG3W1g",
     "rarity": "稀有",
     "category": "火影忍者",
@@ -1526,7 +1523,7 @@ const baseCards = [
   {
     "word": "Neji Hyuga",
     "zh": "日向寧次",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.fyBTmnwVaaZV0rAc9d6oPwHaKX?w=640&h=904&rs=1&pid=ImgDetMain",
+    "image": "https://i.pinimg.com/736x/95/53/ea/9553eae3d33d7204a221e9576ee69697.jpg",
     "video": "https://youtu.be/GGcu5S4U33Y",
     "rarity": "稀有",
     "category": "火影忍者",
@@ -1537,24 +1534,10 @@ const baseCards = [
       "description": "揭示敵方下一個行動"
     }
   },
-  {
-    "word": "Might Guy",
-    "zh": "阿凱老師",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.YZj-A9O4yxN_rnFdvTr30QHaKX?w=640&h=904&rs=1&pid=ImgDetMain",
-    "video": "https://youtu.be/yNJKwENR7b0",
-    "rarity": "稀有",
-    "category": "火影忍者",
-    "description": "熱血燃燒，青春炸裂！體術之巔的傳奇老師。",
-    "effect": {
-      "type": "burst",
-      "value": 80,
-      "description": "釋放青春熱血攻擊，造成 80 點傷害"
-    }
-  },
-  {
+    {
     "word": "Temari",
     "zh": "手鞠",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.wE_sphAYq0ZQ3eOvwjeO8QHaLH?w=640&h=960&rs=1&pid=ImgDetMain",
+    "image": "https://i.pinimg.com/736x/76/41/65/764165d69abe7f09b1c8502d50beff9d.jpg",
     "video": "https://youtu.be/fZKVEG8KIzQ",
     "rarity": "普通",
     "category": "火影忍者",
@@ -1569,7 +1552,7 @@ const baseCards = [
   {
     "word": "Snow White",
     "zh": "白雪公主",
-    "image": "https://www.bing.com/th/id/OGC.0f6e0c6aa2cf28e28d418b46e58b2760?r=0&o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.tenor.com%2fCnQeiIla_r4AAAAC%2fsnow-white-snow-white-and-the-seven-dwarfs.gif&ehk=wGIyAftPN%2bI9redCZbf27tMmVNsZOqA16%2bMDFRYItFA%3d",
+    "image": "https://v1.pinimg.com/videos/mc/720p/63/a6/4f/63a64f8db7a4621420534c84483747d2.mp4",
     "video": "https://youtu.be/PGkWW2lIXc0?si=2ZXcycjF92gsGpc0",
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1643,7 +1626,7 @@ const baseCards = [
   {
     "word": "Pinocchio",
     "zh": "匹諾曹",
-    "image": "https://www.bing.com/th/id/OGC.97bba700295540ac6971d43228982b1e?r=0&o=7&pid=1.7&rm=3&rurl=http%3a%2f%2fn.sinaimg.cn%2fsinakd20112%2f700%2fw400h300%2f20220629%2fa86a-e6322abac7da186ebda982b8074eb95a.gif&ehk=D5cX2%2bbTp%2bBgsETHDVWDzAtdqRslsoLrYH0G%2fp11X%2f4%3d",
+    "image": "https://v1.pinimg.com/videos/mc/720p/aa/30/64/aa306485ba6acf0f00fb097558f44e21.mp4",
 "video": "https://youtu.be/IgtKbhjwCCU?si=23oJ9ScEB9kmvElc",
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1652,7 +1635,7 @@ const baseCards = [
   {
     "word": "Jiminy Cricket",
     "zh": "蟋蟀吉米尼",
-    "image": "https://th.bing.com/th/id/OIP.vDc3CxsoUQY87Fg_psfwFQAAAA?r=0&rs=1&pid=ImgDetMain",
+    "image": "https://v1.pinimg.com/videos/iht/expMp4/98/3c/71/983c71b7ae7b62239b612b1c6e02e72c_720w.mp4",
 "video": "https://youtu.be/DUh_ggTUsCI?si=xai-0bl0MxYOI0fa",
     "rarity": "普通",
     "category": "童話故事",
@@ -1724,7 +1707,7 @@ const baseCards = [
   {
     "word": "Cruella de Vil",
     "zh": "庫伊拉",
-    "image": "https://4.bp.blogspot.com/-cqTEgwerQBM/UoLpBMCICFI/AAAAAAAAE98/258LlOYrmAo/s1600/tumblr_lv5hrxcoLS1qhigt0o1_500.gif",
+    "image": "https://v1.pinimg.com/videos/mc/720p/2c/18/a4/2c18a4eaa1df0befec8736ca40a9ecd1.mp4",
  "video": "https://youtu.be/DbOAa7Tbil0?si=pXKK_z3RCl2ZM-b3",  
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1743,7 +1726,7 @@ const baseCards = [
     "word": "Lady",
     "zh": "小姐",
  "video": "https://youtu.be/SM3jQ2PKxW4?si=3PSr2Ef7Fppx2tUx",
-    "image": "https://hips.hearstapps.com/hmg-prod/images/0505bd7cf187d5852d39388f81a933e1-1597219629.gif?crop=1xw:1xh;center",
+    "image": "https://v1.pinimg.com/videos/iht/720p/de/16/94/de16940de9cd836d88dab672aed86f92.mp4",
     "rarity": "超稀有",
     "category": "童話故事",
     "description": "優雅灰狗在煙火下邂逅流浪狗，愛的旋律在午夜迴盪。"
@@ -1751,7 +1734,7 @@ const baseCards = [
   {
     "word": "Tramp",
     "zh": "流浪狗",
-    "image": "https://images6.fanpop.com/image/photos/38200000/Lady-and-the-Tramp-char-and-anj-38254201-245-324.gif",
+    "image": "https://v1.pinimg.com/videos/mc/720p/cc/cd/af/cccdaf7dfefa12d8b298ace4f50c0e14.mp4",
     "video": "https://youtu.be/sLrWNuGl6ks?si=9BsHctiQ7ZORmLMd",
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1778,7 +1761,7 @@ const baseCards = [
   {
     "word": "Goofy",
     "zh": "高飛",
-    "image": "https://tse1.mm.bing.net/th/id/OIP.W4og2IrTDCN7Q0rNjJwfcQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "image": "https://v1.pinimg.com/videos/mc/720p/d0/50/c0/d050c0847e924ce9e139ac8cecf708de.mp4",
     "video": "https://youtu.be/rdBYmk4dfLE?si=QPgRyHgKbM_a73JZ",
     "rarity": "普通",
     "category": "童話故事",
@@ -1787,7 +1770,7 @@ const baseCards = [
   {
     "word": "Minnie Mouse",
     "zh": "米妮老鼠",
-    "image": "https://i.pinimg.com/originals/18/45/81/184581897ec8c085d106c9a5f71064fa.gif",
+    "image": "https://v1.pinimg.com/videos/mc/720p/85/86/4b/85864b293889b6eca69f0b4d1361e757.mp4",
  "video": "https://youtu.be/7mTMzABsKqo?si=HFDp909G0tMssEva",   
  "rarity": "超稀有",
     "category": "童話故事",
@@ -1796,8 +1779,7 @@ const baseCards = [
   {
     "word": "Pluto",
     "zh": "布魯托",
-    "image": "https://th.bing.com/th/id/OIP.K2-e74680VR-KBJjeo8eNwHaKC?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2",
- "video": "https://youtu.be/2qiP3KxEFpo?si=0aJDBqs-sC0LuvJn", 
+    "image": "https://v1.pinimg.com/videos/720p/79/17/60/791760fe1dee5a5f0405f90a2d216807.mp4", 
     "rarity": "普通",
     "category": "童話故事",
     "description": "米奇忠誠的寵物狗，勇氣與好奇心讓他在冒險中閃耀。"
@@ -1805,7 +1787,7 @@ const baseCards = [
   {
     "word": "Olaf",
     "zh": "奧拉夫",
-    "image": "https://www.bing.com/th/id/OGC.6b08f26e069ea17eae84925fea503e2e?r=0&o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.zenfs.com%2fen%2felle.tw%2f5464f4be22f53e5e838ac06e3283b292&ehk=N3SaS16UtDPe7liS%2fv%2bUlUulpJXpj317Yz2JrSoWPfc%3d",
+    "image": "https://v1.pinimg.com/videos/mc/720p/2b/78/69/2b7869b68ed2b53488d4b981634e3ec7.mp4",
  "video": "https://youtu.be/TSvBrYIPK5s?si=f30G8QxBt4LkQvtF", 
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1814,7 +1796,7 @@ const baseCards = [
   {
     "word": "Simba",
     "zh": "辛巴",
-    "image": "https://i.pinimg.com/originals/bb/64/10/bb64103ca901744582e69d899b6c3ff9.gif",
+    "image": "https://v1.pinimg.com/videos/mc/720p/69/e7/b4/69e7b4022ab01c5078bc30e5aeb3c0b3.mp4",
  "video": "https://youtu.be/kaOIxll4LCA?si=vvwb1DrS-pcsmFUg", 
     "rarity": "超稀有",
     "category": "童話故事",
@@ -1823,7 +1805,7 @@ const baseCards = [
   {
     "word": "Nala",
     "zh": "娜拉",
-    "image": "https://th.bing.com/th/id/R.5744c05e0c74f79c60e86f98bc5120f5?rik=D1dLGEiWG0Qx%2fw&riu=http%3a%2f%2fimages4.fanpop.com%2fimage%2fpolls%2f596000%2f596895_1292268112939_full.jpg%3fv%3d1292268217&ehk=Wcnh5jkupkQ3i%2f9URWWwVlr%2bIQWFqMCH5QJvLe%2bZmy8%3d&risl=&pid=ImgRaw&r=0",
+    "image": "https://v1.pinimg.com/videos/mc/720p/5b/bf/0a/5bbf0a62a64bd9629edf6f2b8b5291fd.mp4",
  "video": "https://youtu.be/a4DSrm6eP0M?si=gUVEjjzd9uOHDT1l", 
     "rarity": "稀有",
     "category": "童話故事",
@@ -1877,7 +1859,7 @@ const baseCards = [
   {
     "word": "Mulan",
     "zh": "花木蘭",
-    "image": "https://th.bing.com/th/id/R.6cf5f0fd277e7865d5b8bea1e2f41231?rik=vNCj%2fEezcAmtuQ&riu=http%3a%2f%2fimages1.fanpop.com%2fimages%2fphotos%2f2400000%2fMulan-Wallpaper-mulan-2471043-1024-768.jpg&ehk=MxKVM1EZa9YmMN%2fGsCInTmaJVKZ32YPClj6uFQR7Wjc%3d&risl=&pid=ImgRaw&r=0",
+    "image": "https://v1.pinimg.com/videos/mc/720p/a9/1b/04/a91b04f45c5b3d7d4c000f827d8b7c98.mp4",
  "video": "https://youtu.be/RN5csaWDKuI?si=kVfAGlEmjR4nIaBq",
     "rarity": "稀有",
     "category": "童話故事",
@@ -1886,8 +1868,7 @@ const baseCards = [
  {
     "word": "Cinderella",
     "zh": "辛德瑞拉",
-    "image": "https://www.bing.com/th/id/OGC.4f658e6dd75a9541f7567299e24729fa?r=0&o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fFz7nXV5N8JP20%2fgiphy.gif&ehk=4bQEQlwZCYKzP7usk07s8CVwGK6CD9SRZbt%2bGTu2cR0%3d",
-    "video": "https://youtu.be/cxGo_Wb7K9Q?si=LoR85Y06i-XFyKRG",
+    "image": "https://v1.pinimg.com/videos/mc/720p/3b/42/95/3b4295427292c67d42c5e535576660cf.mp4",
     "rarity": "超稀有",
     "category": "童話故事",
     "description": "灰姑娘在暮色南瓜馬車裡奔向夢想，用一隻水晶鞋書寫逆轉人生的詩篇。",
@@ -1900,7 +1881,7 @@ const baseCards = [
   {
     "word": "Pocahontas",
     "zh": "波卡洪塔斯",
-    "image": "https://th.bing.com/th/id/OIP.vwcYWaXSo3xaKtSCfy94rgHaMV?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc2",
+    "image": "https://v1.pinimg.com/videos/mc/720p/9b/0d/ba/9b0dba9ccf0fe67c129234c7cbb9b2b4.mp4",
  "video": "https://youtu.be/Do5TwE_jYnE?si=JROK4SEEGbeX7X4A",
     "rarity": "稀有",
     "category": "童話故事",
@@ -1909,7 +1890,7 @@ const baseCards = [
   {
     "word": "Tiana",
     "zh": "蒂安娜",
-    "image": "https://i.pinimg.com/736x/d8/4f/cb/d84fcb3922ddac533bfe6cd81c2b6008.jpg",
+    "image": "https://v1.pinimg.com/videos/mc/720p/9c/5c/22/9c5c2270259b4e33227f48797c35c44d.mp4",
  "video": "https://youtu.be/jKXDtjaacE8?si=ubV949Lsg9ugCjXv",
     "rarity": "稀有",
     "category": "童話故事",
@@ -1918,7 +1899,7 @@ const baseCards = [
   {
     "word": "Scar",
     "zh": "刀疤",
-    "image": "https://media.giphy.com/media/l1l3TCGoCsY0g/giphy.gif",
+    "image": "https://v1.pinimg.com/videos/mc/720p/5e/1a/67/5e1a67005427bde4e4af38d5219677e4.mp4",
  "video": "https://youtu.be/5WsZdDDQ8b0?si=FRM4xywvheh836PA",
     "rarity": "稀有",
     "category": "童話故事",
@@ -1958,30 +1939,30 @@ rarity: "普通", category: "銀河漫遊",
 description: "搭載宇航員飛向銀河漫遊的載具，壯觀又神秘。" },
 
   { word: "galaxy", zh: "銀河", 
-image: "https://www.bing.com/th/id/OGC.e2a46e1f690f991da06c60f236d233ed?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2ftigercat3.up.seesaa.net%2fimage%2f7F5Xgui0kpxd4f8RZJW41697959101-1697959112-thumbnail2.gif&ehk=ekpGI5h2lJsrm3oPoNm6TVd%2fXpk5P%2b8IUDJbLi66ViM%3d", 
+image: "https://v1.pinimg.com/videos/mc/720p/5d/67/1e/5d671e3006cde6587df394bfa345f4d0.mp4", 
 video: "https://youtu.be/g5RKRUGvFTE?si=uMyUdpXMgiArbyg3", 
 rarity: "稀有", category: "銀河漫遊", 
 description: "包含數百億顆恆星的巨大星系，我們的家園僅是微塵。" },
 
   { word: "astronaut", zh: "太空人", 
-image: "https://th.bing.com/th/id/OIP.ysExHkAfR6VfA_B_VZFbRAHaEZ?w=312&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", video: "https://youtu.be/Hz2F_S3Tl0Y?si=3Wj6YwjJJZwev47h", 
+image: "https://www.pinterest.com/pin/3377768466741827/", video: "https://youtu.be/Hz2F_S3Tl0Y?si=3Wj6YwjJJZwev47h", 
 rarity: "稀有", category: "銀河漫遊", 
 description: "穿著銀河漫遊衣的探險者，跨出地心，追尋星辰夢。" },
 
   { word: "spaceship", zh: "太空船", 
-image: "https://www.bing.com/th/id/OGC.9864c8cf473553e922d523a4b47f3d13?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fbkimg.cdn.bcebos.com%2fpic%2fcaef76094b36acaf2eddc49e8a819a1001e939013602&ehk=Qye%2b4vrvIdUj%2fH5cXCZbrQZ7O5p8ek8os4bENwLtshY%3d", 
+image: "https://v1.pinimg.com/videos/iht/720p/f6/4b/cd/f64bcd13f2e78749e34731d7055a4b8e.mp4", 
 video: "https://youtu.be/oBLXZOSCC1o?si=717UbXS4LU7e3s7Y", 
 rarity: "稀有", 
 category: "銀河漫遊", 
 description: "星際航行的鋼鐵巨艦，承載無限可能。" },
 
   { word: "satellite", zh: "衛星", 
-image: "https://th.bing.com/th/id/OIP.wNfZipTjynDkrGreGz5sWgHaEK?w=246&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", video: "https://youtu.be/-S1xnAimqXg?si=_X7WkR1gOfxp8Zjc", 
+image: "https://v1.pinimg.com/videos/mc/720p/cb/d0/0e/cbd00e79a6f65fb51cf89b653dbccd1e.mp4", 
 rarity: "普通", category: "銀河漫遊", 
 description: "繞行於軌道之上，傳遞地球的聲音與光影。" },
 
   { word: "blackhole", zh: "黑洞", 
-image: "https://www.bing.com/th/id/OGC.c2b2a0846988d7ef8760c24750836149?o=7&pid=1.7&rm=3&rurl=http%3a%2f%2fpic.rmb.bdstatic.com%2fc2b2a0846988d7ef8760c247508361491963.gif&ehk=%2bsgr%2bVv%2bc7989RARw%2fTTq8wA9Ti50x6hKlIx2mQdoaE%3d", 
+image: "https://v1.pinimg.com/videos/mc/720p/b6/9f/1a/b69f1a7006fd8c3ae9e8de1b0dcaf69e.mp4", 
 video: "https://youtu.be/JXWfRoAmKCs?si=Gk5cFxnOouL6nSNa", 
 rarity: "超稀有", category: "銀河漫遊", 
 description: "吞噬一切的暗影漩渦，宇宙深處的謎團。", youtube: "https://www.youtube.com/watch?v=QqsLTNkzvaY" },
@@ -2400,63 +2381,63 @@ category: "神話生物", description: "白蹄踏露，角尖閃耀純潔光芒�
     "category": "One Piece",
     "role": "Antagonist",
     "description": "可以瞬間推開一切痛苦，卻用沉默構築深邃；拳風輕拂卻撕裂靈魂。"
-  },
-{
-    "word": "Gomu Gomu no Mi",
-    "zh": "橡膠果實",
-    "image": "https://i.pinimg.com/736x/aa/bb/cc/gomugumonomi.jpg",
-    "video": "https://youtu.be/GmGuMu1234?si=XYZabc",
-    "youtube": "https://www.youtube.com/watch?v=GmGuMu1234",
+ },
+ {
+    "word": "Sung Jin-Woo",
+    "zh": "成振宇",
+    "image": "https://i.pinimg.com/736x/12/34/56/jinwoo.jpg",
+    "video": "https://youtu.be/JinWoo123?si=XP123",
+    "youtube": "https://www.youtube.com/watch?v=JinWoo123",
     "rarity": "超稀有",
-    "category": "One Piece",
-    "role": "Devil Fruit",
-    "description": "吃下就能伸長如橡皮筋，甩出一拳就像放大版彈簧，打人還能順便做瑜珈。"
+    "category": "Solo Leveling",
+    "role": "Protagonist",
+    "description": "從最弱的獵人化身暗影君主，黑色披風下，死亡為他效忠。"
   },
   {
-    "word": "Hito Hito no Mi",
-    "zh": "人人果實",
-    "image": "https://i.pinimg.com/736x/bb/cc/dd/hitohitonomi.jpg",
-    "video": "https://youtu.be/HiToHiTo123?si=DEFuvw",
-    "youtube": "https://www.youtube.com/watch?v=HiToHiTo123",
+    "word": "Cha Hae-In",
+    "zh": "車海印",
+    "image": "https://i.pinimg.com/736x/78/90/12/chahaein.jpg",
+    "video": "https://youtu.be/ChaHae123?si=LOV3",
+    "youtube": "https://www.youtube.com/watch?v=ChaHae123",
     "rarity": "稀有",
-    "category": "One Piece",
-    "role": "Devil Fruit",
-    "description": "動物界的超級變身藥，一口咬下從走獸秒變智商爆表人類；配方穩定送醫必備。"
+    "category": "Solo Leveling",
+    "role": "Hunter",
+    "description": "她以劍為舞，銀光閃爍；在靜默中守護，亦為唯一能聞見他的氣息。"
   },
   {
-    "word": "Mera Mera no Mi",
-    "zh": "炎炎果實",
-    "image": "https://i.pinimg.com/736x/cc/dd/ee/merameranomi.jpg",
-    "video": "https://youtu.be/MeRaMeRa123?si=GHIjkl",
-    "youtube": "https://www.youtube.com/watch?v=MeRaMeRa123",
+    "word": "Go Gun-Hee",
+    "zh": "高建熙",
+    "image": "https://i.pinimg.com/736x/98/76/54/gogunhee.jpg",
+    "video": "https://youtu.be/GunHee123?si=POWER",
+    "youtube": "https://www.youtube.com/watch?v=GunHee123",
+    "rarity": "普通",
+    "category": "Solo Leveling",
+    "role": "Association President",
+    "description": "蒼老肩膀承載獵人世界，正義與遺憾交錯，他為未來點燃最後一道炬火。"
+  },
+  {
+    "word": "Beru",
+    "zh": "貝魯",
+    "image": "https://i.pinimg.com/736x/11/22/33/beru.jpg",
+    "video": "https://youtu.be/Beru123?si=SHDW",
+    "youtube": "https://www.youtube.com/watch?v=Beru123",
+    "rarity": "超稀有",
+    "category": "Solo Leveling",
+    "role": "Shadow Soldier",
+    "description": "曾為蟻王，今為影僕，忠誠如鐵，殺意如刃，他的咆哮讓敵人噤聲。"
+  },
+  {
+    "word": "Thomas Andre",
+    "zh": "湯瑪斯·安德烈",
+    "image": "https://i.pinimg.com/736x/44/55/66/thomas.jpg",
+    "video": "https://youtu.be/Thomas123?si=TANK",
+    "youtube": "https://www.youtube.com/watch?v=Thomas123",
     "rarity": "稀有",
-    "category": "One Piece",
-    "role": "Devil Fruit",
-    "description": "身體化為火焰，連打噴嚏都能爆出小火苗，看電影最好別坐過近。"
+    "category": "Solo Leveling",
+    "role": "National Level Hunter",
+    "description": "肌肉山脈般的存在，一拳震城；美利堅的野獸，強悍無需多言。"
   },
-  {
-    "word": "Gura Gura no Mi",
-    "zh": "震震果實",
-    "image": "https://i.pinimg.com/736x/dd/ee/ff/guraguranomi.jpg",
-    "video": "https://youtu.be/GuRaGuRa123?si=MNOpqr",
-    "youtube": "https://www.youtube.com/watch?v=GuRaGuRa123",
-    "rarity": "超稀有",
-    "category": "One Piece",
-    "role": "Devil Fruit",
-    "description": "一拳揮出就能掀起地動山搖，連隔壁房子的貓都能被嚇得打哈欠。"
-  },
-  {
-    "word": "Yami Yami no Mi",
-    "zh": "暗暗果實",
-    "image": "https://i.pinimg.com/736x/ee/ff/00/yamiyaminomi.jpg",
-    "video": "https://youtu.be/YaMiYaMi123?si=STUvwx",
-    "youtube": "https://www.youtube.com/watch?v=YaMiYaMi123",
-    "rarity": "超稀有",
-    "category": "One Piece",
-    "role": "Devil Fruit",
-    "description": "黑洞般吞噬一切力量，什麼都吸得入；想跟它做遊戲？先確定你能承受重力。"
-  },  
-// 未來都市類型 (共7張)
+  // 未來都市類型 (共7張)
   { word: "neoncity", zh: "霓虹都市", image: "https://th.bing.com/th/id/OIP.ecqHXnof2qkj2k4HSZ_zVgHaE7?w=626&h=417&rs=1&pid=ImgDetMain", rarity: "稀有", category: "未來都市", description: "光影交織的街道，夢想與現實在霓虹中共舞。" },
   { word: "hovercar", zh: "懸浮車", image: "https://img.freepik.com/premium-photo/amazing-flying-car-combining-futuristic-technology_951992-2843.jpg", rarity: "稀有", category: "未來都市", description: "車輪消逝於街面，未來的律動在空中飛馳。" },
   { word: "cybertower", zh: "賽博塔", image: "https://img.freepik.com/premium-photo/a-futuristic-cityscape-illuminated-by-the-glow-of-computer-science-technology_349863-1434.jpg", rarity: "超稀有", category: "未來都市", description: "高聳入雲，霧化之光刷洗每層記憶。" },
